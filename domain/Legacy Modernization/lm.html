@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy Modernization</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="lm.css">
+    <link rel="icon" type="image/cube-icon" href="../../../favicon.png">
+</head>
+
+<body>
+    <!-- main header -->
+    <header id="navbar">
+        <div class="navbar-logo">
+            <img src="images/logo.png" alt="Logo" class="logo" />
+            <a class="cubeaisolutions"><span style="color: #004e69">C</span>ube<span
+                    style="color: #004e69">A</span><span style="color: #2596be">I</span><span
+                    style="color: #004e69">S</span>olutions</a>
+        </div>
+        <div class="navbar-right">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../About us/about us.html">About</a></li>
+                    <li><a href="../../Service Page/Service.html">Services</a></li>
+                    <li><a href="../../contact-us/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="search-menu-icon">
+                <img src="images/Search.png" alt="search-icon" />
+            </div> -->
+            <div class="search-menu-icon" onclick="togglePopup()">
+                <img src="images/menu.png" alt="menu-icon" />
+            </div>
+        </div>
+    </header>
+    <!-- Popup box -->
+    <div class="popup-container" id="popup">
+        <div class="popup-content">
+            <div class="popup-close" onclick="togglePopup()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z" />
+                </svg>
+            </div>
+            <div class="popup-links">
+                <a href="../../index.html" class="popup-links-content1">Home</a>
+                <a href="../../About us/about us.html" class="popup-links-content1">About Us</a>
+                <a href="../../Service Page/Service.html" class="popup-links-content1">Services</a>
+                <a href="../../contact-us/contact.html" class="popup-links-content1">Contact</a>
+                <a href="#">Industries</a>
+                <a href="#">Gallery</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="popup-social-icons">
+                <a href="https://x.com/CubeAISolutions" target="_blank"><img src="images/Twitter.svg" alt="Twitter"></a>
+                <a href="https://www.instagram.com/cubeaisolutions_tech?igsh=MXEzamNmbTRsYmlyMA==" target="_blank"><img
+                        src="images/Instagram.svg" alt="Instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=61561157782258" target="_blank"><img
+                        src="images/Facebook.svg" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/company/cubeaisolutions-tech-pvt-ltd" target="_blank"><img
+                        src="images/Linkedin.svg" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="../../Service Page/Service.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a><a
+                class="navbar-brand"> &nbsp;Legacy Modernization</a>
+            <button class="navbar-toggler" type="button" id="sidebarToggle">
+                <span><i class="fa-solid fa-caret-down" style="color: white; font-size: 20px;"></i></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="what-to-do-link">What to do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="solutions-link">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="trending-link">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="future-plan-link">Future Plan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="sidebar" class="sidebar">
+        <button id="close-btn" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <ul class="sidebar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#what-to-do" id="what-to-do-link">What we do</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#solutions" id="solutions-link">Solutions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#trending" id="trending-link">Trending</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#future-plan" id="future-plan-link">Future Plan</a>
+            </li>
+        </ul>
+    </div>
+    <!-- home -->
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="display-5">Revolutionizing Business through Modernized Legacies</h1>
+                <p class="mt-4">
+                    Our consultants specialize in navigating the complexities of legacy modernization, addressing
+                    challenges such as legacy system dependencies, data migration complexities, and business process
+                    reengineering. We streamline the modernization process, ensuring minimal disruption to operations
+                    while maximizing the value of legacy assets.
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="images/home.png" class="img-fluid custom-image" alt="Modernized Legacies">
+            </div>
+        </div>
+    </div>
+    <!-- what we do -->
+    <div class="container mt-5" id="what-to-do">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center order-md-1 order-2">
+                <img src="images/what-we-do.png" class="img-fluid custom-image" alt="Legacy Modernization">
+            </div>
+            <div class="col-md-6 order-md-2 order-1" id="content">
+                <h2 class="h4">What we do?</h2>
+                <p class="mt-2" id="p">
+                    Our legacy modernization services empower businesses to modernize their IT infrastructure,
+                    streamline operations, and drive digital innovation. From legacy assessment and roadmap development
+                    to migration execution and post-migration optimization, we guide organizations through every step of
+                    the modernization journey. Leveraging best-in-class technologies and proven methodologies, we ensure
+                    seamless transition and tangible business outcomes.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- solutions -->
+    <h1 class="text mb-4" id="solutions">Tackling Your Toughest Challenges in the Legacy Modernization:</h1>
+    <div class="row justify-content-center" id="solutions">
+        <div class="col-lg-9 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2>How the Legacy Modernization Domain Changes the World in Technology Perspective:</h2>
+                    <h5 class="card-title">Digital Transformation Integration:</h5>
+                    <p class="card-text">Legacy modernization seamlessly integrates with digital transformation
+                        initiatives, enabling businesses to modernize outdated systems and processes. This integration
+                        fosters agility, innovation, and positioning organizations for sustained growth and competitive
+                        advantage.</p>
+                </div>
+                <img src="images/lm1.png" alt="CSS" class="card-image">
+            </div>
+        </div>
+    </div>
+    <div class="custom-container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 mb-4">
+                <div class="custom-card-box">
+                    <div class="custom-card-body">
+                        <h5 class="custom-card-title">Cloud Migration:</h5>
+                        <p class="custom-card-text">Legacy modernization facilitates the migration of legacy systems to
+                            cloud-based platforms, unlocking benefits such as scalability, flexibility, and
+                            cost-efficiency. By leveraging cloud technologies, businesses can modernize their IT
+                            infrastructure, enhance performance, and accelerate digital innovation.</p>
+                    </div>
+                    <img src="images/lm2.png" alt="CSS" class="custom-card-image">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row mb-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">DevOps Adoption:</h5>
+                                <p class="card-text">Legacy modernization drives the adoption of DevOps practices and
+                                    methodologies, fostering collaboration between development and operations teams.
+                                    This cultural shift enables organizations to accelerate software delivery, improve
+                                    deployment frequency, and enhance overall efficiency and quality.</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="custom-col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">API-driven Architecture:</h5>
+                                <p class="card-text">Legacy modernization embraces API-driven architectures, enabling
+                                    seamless integration and interoperability between modern and legacy systems. By
+                                    exposing legacy functionalities as APIs, businesses can unlock data silos, enable
+                                    cross-platform communication, and facilitate innovation through ecosystem
+                                    partnerships.</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section-2 -->
+    <div class="row justify-content-center">
+        <div class="col-lg-9 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Microservices Adoption:</h5>
+                    <p class="card-text">Legacy modernization seamlessly integrates with digital transformation
+                        initiatives, enabling businesses to modernize outdated systems and processes. This integration
+                        fosters agility, innovation, and positioning organizations for sustained growth and competitive
+                        advantage.</p>
+                </div>
+                <img src="images/lm3.png" alt="CSS" class="card-image">
+            </div>
+        </div>
+    </div>
+    <div class="custom-container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 mb-4">
+                <div class="custom-card-box">
+                    <div class="custom-card-body">
+                        <h5 class="custom-card-title">Cloud Migration:</h5>
+                        <p class="custom-card-text">Legacy modernization facilitates the migration of legacy systems to
+                            cloud-based platforms, unlocking benefits such as scalability, flexibility, and
+                            cost-efficiency. By leveraging cloud technologies, businesses can modernize their IT
+                            infrastructure, enhance performance, and accelerate digital innovation.</p>
+                    </div>
+                    <img src="images/lm4.png" alt="CSS" class="custom-card-image">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row mb-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Quantum Computing:</h5>
+                                <p class="card-text">Quantum computing is an emerging field that leverages quantum bits
+                                    (qubits) to perform complex calculations exponentially faster than classical
+                                    computers. It has the potential to revolutionize cryptography, optimization, and
+                                    scientific simulations.</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="custom-col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Blockchain Beyond Cryptocurrencies:</h5>
+                                <p class="card-text">While blockchain gained prominence through cryptocurrencies, its
+                                    applications extend beyond
+                                    digital currencies. Blockchain
+                                    can be used for secure supply
+                                    chain management, identity verification, and transparent
+                                    voting systems.</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- trending -->
+    <h1 class="text mb-4" id="trending">What's Trending in Legacy Modernization:</h1>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-5 mb-trend">
+            <div class="trend-card-container">
+                <div class="trend-card">
+                    <div class="trend-card-content">
+                        <h5 class="trend-card-title">Extensive Experience and Proficiency:</h5>
+                        <p class="trend-card-text">With a wealth of experience in legacy modernization, we possess the
+                            skills and knowledge to navigate intricate modernization projects effectively,outcomes that
+                            surpass expectations.</p>
+                    </div>
+                    <img src="images/trending1.jpg" alt="CSS" class="trend-card-image">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-5 mb-trend">
+            <div class="trend-card-container">
+                <div class="trend-card">
+                    <div class="trend-card-content">
+                        <h5 class="trend-card-title">Innovative and Agile Approach:</h5>
+                        <p class="trend-card-text">We are continually updated on the latest trends and advancements in
+                            legacy modernization, allowing us to innovate and adjust our methodologies to match the
+                            ever-evolving needs of our clients.</p>
+                    </div>
+                    <img src="images/trending2.jpg" alt="Another Image" class="trend-card-image">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-5 mb-trend text-center">
+                <div class="trend-card-container">
+                    <div class="trend-card" id="trend-card">
+                        <img src="images/trending3.jpg" alt="Another Image" class="trend-card-image"
+                            id="trend-card-image">
+                        <div class="trend-card-content" id="trend-card-content">
+                            <h5 class="trend-card-title">Customized Solutions:</h5>
+                            <p class="trend-card-text">Recognizing that each organization has its own set of challenges
+                                and aspirations, we collaborate closely with clients to devise tailored modernization
+                                strategies aligned precisely with their business objectives.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-5 mb-trend">
+                <div class="trend-card-container">
+                    <div class="trend-card">
+                        <div class="trend-card-content">
+                            <h5 class="trend-card-title">Containerization and Orchestration:</h5>
+                            <p class="trend-card-text">Understand the benefits of containerization (using tools like
+                                Docker) and orchestration (with Kubernetes) for legacy applications. Discuss how these
+                                technologies simplify deployment, scaling, and management.</p>
+                        </div>
+                        <img src="images/trending4.png" alt="CSS" class="trend-card-image">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 mb-trend">
+                <div class="trend-card-container">
+                    <div class="trend-card">
+                        <div class="trend-card-content">
+                            <h5 class="trend-card-title">Microservices Architecture:</h5>
+                            <p class="trend-card-text">Explore how breaking down monolithic applications into smaller,
+                                independent services can enhance scalability, maintainability, and agility. Discuss the
+                                challenges and best practices for adopting a microservices architecture.</p>
+                        </div>
+                        <img src="images/trending5.png" alt="Another Image" class="trend-card-image">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- enquiry -->
+        <div class="form-container">
+            <div class="form">
+                <div class="form-header">
+                    <div class="company-info">
+                        <span class="company-name">CubeAISolutions Tech</span>&nbsp;
+                        <img src="IMAGES/logo.png" alt="Company Logo" class="company-logo">
+                    </div>
+                    <div class="form-heading">For Enquiry</div>
+                </div>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="aac69ced-9d46-4fec-a5ba-97d7cd98b5ed">     
+                    <input type="hidden" name = "Page" value="Legacy Modernization">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="fullName">Full Name</label>
+                            <div class="position-relative">
+                                <input type="text" class="form-control" name="Name" id="fullName" placeholder="Enter your Name">
+                                <span class="form-control-icon">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="phoneNumber">Phone Number</label>
+                            <div class="position-relative">
+                                <input type="text" class="form-control" name="Phone Number" id="phoneNumber"
+                                    placeholder="Enter your Phone Number">
+                                <span class="form-control-icon">
+                                    <i class="fas fa-phone"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="position-relative">
+                            <input type="email" class="form-control" name="Email" id="email" placeholder="Enter your Email">
+                            <span class="form-control-icon">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group textarea-container">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" name="Message" id="message" rows="4"
+                            placeholder="Your message here."></textarea>
+                        <span class="textarea-icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </span>
+                    </div>
+                    <div class="btn-container">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+</body>
+<script src="lm.js"></script>
+
+</html>

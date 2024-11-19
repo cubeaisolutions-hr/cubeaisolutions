@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="dm.css">
+    <link rel="icon" type="image/cube-icon" href="../../../favicon.png">
+</head>
+
+<body>
+    <!-- main header -->
+    <header id="navbar">
+        <div class="navbar-logo">
+            <img src="images/logo.png" alt="Logo" class="logo" />
+            <a class="cubeaisolutions"><span style="color: #004e69">C</span>ube<span
+                    style="color: #004e69">A</span><span style="color: #2596be">I</span><span
+                    style="color: #004e69">S</span>olutions</a>
+        </div>
+        <div class="navbar-right">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../About us/about us.html">About</a></li>
+                    <li><a href="../../Service Page/Service.html">Services</a></li>
+                    <li><a href="../../contact-us/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="search-menu-icon">
+                <img src="images/Search.png" alt="search-icon" />
+            </div> -->
+            <div class="search-menu-icon" onclick="togglePopup()">
+                <img src="images/menu.png" alt="menu-icon" />
+            </div>
+        </div>
+    </header>
+    <!-- Popup box -->
+    <div class="popup-container" id="popup">
+        <div class="popup-content">
+            <div class="popup-close" onclick="togglePopup()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z" />
+                </svg>
+            </div>
+            <div class="popup-links">
+                <a href="../../index.html" class="popup-links-content1">Home</a>
+                <a href="../../About us/about us.html" class="popup-links-content1">About Us</a>
+                <a href="../../Service Page/Service.html" class="popup-links-content1">Services</a>
+                <a href="../../contact-us/contact.html" class="popup-links-content1">Contact</a>
+                <a href="#">Industries</a>
+                <a href="#">Gallery</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="popup-social-icons">
+                <a href="https://x.com/CubeAISolutions" target="_blank"><img src="images/Twitter.svg"
+                    alt="Twitter"></a>
+            <a href="https://www.instagram.com/cubeaisolutions_tech?igsh=MXEzamNmbTRsYmlyMA=="
+                target="_blank"><img src="images/Instagram.svg" alt="Instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=61561157782258" target="_blank"><img
+                    src="images/Facebook.svg" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/company/cubeaisolutions-tech-pvt-ltd" target="_blank"><img
+                    src="images/Linkedin.svg" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+           <a href="../../Service Page/Service.html"class="back-arrow"> <i class="fas fa-arrow-left"></i></a> <a class="navbar-brand"> &nbsp;Digital Marketing</a>
+            <button class="navbar-toggler" type="button" id="sidebarToggle">
+                <span><i class="fa-solid fa-caret-down" style="color: white; font-size: 20px;"></i></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="what-to-do-link">What we do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="solutions-link">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="trending-link">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="future-plan-link">Future Plan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="sidebar" class="sidebar">
+        <button id="close-btn" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <ul class="sidebar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#what-to-do" id="what-to-do-link">What we do</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#solutions" id="solutions-link">Solutions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#trending" id="trending-link">Trending</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#future-plan" id="future-plan-link">Future Plan</a>
+            </li>
+        </ul>
+    </div>
+    <!-- home -->
+    <div class="home">
+        <div class="overlay-text">
+            <h2>Digital Marketing: Where Ideas Meet Innovation, and Brands Shine Bright</h2>
+            <p>Driving visibility, engagement, and conversions through targeted digital marketing strategies. From SEO
+                and social media marketing to PPC and email campaigns, we help you reach your target audience
+                effectively</p>
+        </div>
+    </div>
+    <!-- what we do -->
+    <div class="section my-5" id="what-to-do">
+        <div class="row">
+            <div class="col-md-6 offset-md-1 d-flex align-items-center">
+                <div class="text-container">
+                    <h2>What we do?</h2>
+                    <p>Our digital marketing team tailors engaging content and ads, utilizing AI for personalized
+                        recommendations and data analysis. We guarantee timely delivery of relevant content, optimizing
+                        for voice searches amidst smart speaker popularity. By employing immersive experiences such as
+                        product demos, we comply with evolving regulations, fostering credibility. Staying updated on
+                        trends, we grasp emerging technologies and shifts in consumer behavior, crafting captivating,
+                        quality content.</p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img src="images/what-we-do.png" class="small-img" alt="Web Development">
+            </div>
+        </div>
+    </div>
+    <!-- solutions -->
+    <h5 class="solutions">Tackling your Toughest Challenges in Digital Marketing</h5>
+    <div class="container" id="solutions">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="content">
+                    <h4>How the Digital marketing domain change the world in technology perspective?</h4>
+                    <h3>Data Analytics and Targeting</h3>
+                    <p>"Utilizing advanced analytics tools, digital marketing harnesses customer data to precisely
+                        target demographics, optimizing campaign efficiency and effectiveness."</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="image">
+                    <img src="images/dm1.png" alt="Digital Marketing Illustration">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content ar-vr">
+                    <h3>Augmented Reality (AR) and Virtual Reality (VR)</h3>
+                    <p>“Digital marketing employs AR and VR technologies to craft immersive consumer experiences,
+                        nurturing distinctive brand engagement and deeper connections, ultimately cultivating lasting
+                        brand loyalty through memorable interactions.”</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content automation-ai">
+                    <h3>Automation and AI</h3>
+                    <p>"Automation technologies and AI algorithms have transformed digital marketing, optimizing ad
+                        placements and email marketing while enhancing personalization and responsiveness, ultimately
+                        increasing efficiency and saving time."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="image">
+                    <img src="images/dm2.png" alt="Digital Marketing Illustration" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content">
+                    <h3>Mobile Optimization</h3>
+                    <p>"As smartphones become ubiquitous, digital marketing strategies pivot towards mobile
+                        optimization, encompassing responsive website design, mobile apps, and location-based marketing
+                        to reach consumers seamlessly and timely across online platforms."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section-2 -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="content">
+                    <h3>Voice Search Optimization:</h3>
+                    <p>SEO adapts for natural language queries, enhancing visibility across voice-enabled devices,
+                        aligning digital marketing strategies with changing consumer behaviors.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="image">
+                    <img src="images/dm3.png" alt="Digital Marketing Illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content ar-vr">
+                    <h3>Omnichannel Marketing Integration:</h3>
+                    <p>Integrating marketing efforts across channels ensures a unified brand experience for consumers,
+                        fostering loyalty and trust. By synchronizing messaging and data insights across platforms,
+                        businesses optimize touchpoints for maximum impact and ROI, ultimately driving long-term success
+                        in the competitive digital landscape.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content automation-ai">
+                    <h3>Chatbot Implementation:</h3>
+                    <p>AI-powered chatbots provide instant support, streamlining customer interactions, enhancing
+                        satisfaction, and retention rates in digital marketing efforts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="image">
+                    <img src="images/dm4.png" alt="Digital Marketing Illustration" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content">
+                    <h3>Automated Email Campaigns:</h3>
+                    <p> Automation tools streamline email marketing processes, allowing for the creation of triggered
+                        email campaigns based on specific customer actions or milestones, enhancing engagement and
+                        conversion rates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section-3 -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="content">
+                    <h3>Data Privacy and Compliance Solutions:</h3>
+                    <p>In response to evolving data privacy regulations, digital marketing platforms integrate robust
+                        data privacy and compliance solutions, ensuring that customer data is collected, stored, and
+                        utilized in accordance with legal requirements and industry best practices.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="image">
+                    <img src="images/dm5.png" alt="Digital Marketing Illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content ar-vr">
+                    <h3>Personalized Marketing Automation:</h3>
+                    <p>By leveraging data-driven insights, personalized marketing automation tailors campaigns to
+                        individual preferences, delivering targeted messages and product recommendations. This approach
+                        enhances the customer experience, fosters loyalty, and drives higher conversion rates,
+                        maximizing marketing ROI.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content automation-ai">
+                    <h3>Influencer Marketing Platforms:</h3>
+                    <p>Digital marketing platforms offer influencer marketing solutions that utilize AI algorithms to
+                        identify, vet, and manage influencer partnerships, enabling brands to collaborate with
+                        influencers who align with their values and target audience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="image">
+                    <img src="images/dm6.png" alt="Digital Marketing Illustration" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content">
+                    <h3>Customer Experience Automation:</h3>
+                    <p>Automation technologies streamline the customer journey by delivering personalized experiences
+                        across multiple touchpoints, from initial engagement to post-purchase support, enhancing overall
+                        customer satisfaction and loyalty.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sectio-4 -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="content">
+                    <h3>Agile Marketing Methodologies</h3>
+                    <p>Digital marketing embraces agile methodologies, allowing marketers to adapt quickly to changing
+                        market conditions, consumer preferences, and technological advancements, fostering a culture of
+                        experimentation, learning, and continuous improvement.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="image">
+                    <img src="images/dm7.png" alt="Digital Marketing Illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content ar-vr">
+                    <h3>Blockchain in Marketing:</h3>
+                    <p>Blockchain technology provides transparency and security by creating immutable records, enhancing
+                        trust and reducing fraud in marketing. Marketers leverage blockchain for decentralized data
+                        storage, streamlining processes and optimizing ad targeting, leading to more efficient and
+                        accountable campaigns.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content automation-ai">
+                    <h3>Social Listening:</h3>
+                    <p>Digital marketing platforms enable social listening, allowing businesses to monitor
+                        conversations, sentiment, and trends across social media channels, providing valuable insights
+                        for brand reputation management and strategy refinement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="image">
+                    <img src="images/dm8.png" alt="Digital Marketing Illustration" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content">
+                    <h3>Dynamic Remarketing:</h3>
+                    <p>Digital marketers leverage AI algorithms for dynamic remarketing, delivering personalized ads to
+                        users based on their past interactions and preferences, increasing the likelihood of conversion.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- trending -->
+    <h5 class="trending">What's trending in Digital Marketing</h5>
+    <div class="container" id="trending">
+        <div class="row">
+            <!-- First Column -->
+            <div class="col-md-4">
+                <div class="info-box">
+                    <img src="images/infulencer.png" alt="Influencer Marketing">
+                    <h4>Influencer Marketing</h4>
+                    <p>Collaborating with influencers on social media platforms remains a powerful strategy for reaching
+                        and engaging target audiences.</p>
+                </div>
+            </div>
+            <!-- Icon in the middle -->
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <div class="icon-container" id="unique-icon">
+                    <img src="images/trending1.png" alt="Icon">
+                </div>
+            </div>
+            <!-- Second Column -->
+            <div class="col-md-4">
+                <div class="info-box">
+                    <img src="images/AI.png" alt="AI and Machine Learning">
+                    <h4>AI and Machine Learning</h4>
+                    <p>Marketers are leveraging AI and machine learning algorithms for data analysis, customer
+                        segmentation, chatbots, and personalized recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- First Column -->
+            <div class="col-md-4">
+                <div class="icon-container">
+                    <img src="images/trending2.png" alt="Icon">
+                </div>
+            </div>
+            <!-- Icon in the middle -->
+            <div class="col-md-4 info-box-to-move">
+                <div class="info-box">
+                    <img src="images/personalization.png" alt="Influencer Marketing">
+                    <h4>Influencer Marketing</h4>
+                    <p>Collaborating with influencers on social media platforms remains a powerful strategy for reaching
+                        and engaging target audiences.</p>
+                </div>
+            </div>
+            <!-- Second Column -->
+            <div class="col-md-4">
+                <div class="icon-container">
+                    <img src="images/trending3.png" alt="Icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- enquiry -->
+    <div class="form-container">
+        <div>
+            <div class="form-header">
+                <div class="company-info">
+                    <span class="company-name">CubeAISolutions Tech</span>
+                    <img src="IMAGES/logo.png" alt="Company Logo" class="company-logo">
+                </div>
+                <div class="form-heading">For Enquiry</div>
+            </div>
+            
+<form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="aac69ced-9d46-4fec-a5ba-97d7cd98b5ed">
+    <input type="hidden" name = "Page" value="Digital Engineering">
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="fullName">Full Name</label>
+                        <div class="position-relative">
+                            <input type="text" class="form-control" name="Name" id="fullName" placeholder="Enter your Name">
+                            <span class="form-control-icon">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="phoneNumber">Phone Number</label>
+                        <div class="position-relative">
+                            <input type="text" class="form-control" name="Phone Number" id="phoneNumber"
+                                placeholder="Enter your Phone Number">
+                            <span class="form-control-icon">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="position-relative">
+                        <input type="email" class="form-control" id="email" name="Email" placeholder="Enter your Email">
+                        <span class="form-control-icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group textarea-container">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="Message" rows="4" placeholder="Your message here."></textarea>
+                    <span class="textarea-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </span>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+</body>
+<script src="dm.js"></script>
+
+</html>

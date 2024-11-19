@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="ce.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cloud Engineering</title>
+    <link rel="icon" type="image/cube-icon" href="../../../favicon.png">
+</head>
+
+<body>
+    <header id="navbar" >
+        <div class=" navbar-logo">
+        <img src="images/cas-logo.svg" alt="Logo" />
+        <a class="cubeaisolutions"><span style="color: #004e69">C</span>ube<span style="color: #004e69">A</span><span
+                style="color: #2596be">I</span><span style="color: #004e69">S</span>olutions</a>
+        </div>
+        <div class="navbar-right">
+            <nav>
+                <ul class="nav-link">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../About us/about us.html">About</a></li>
+                    <li><a href="../../Service Page/Service.html">Services</a></li>
+                    <li><a href="../../contact-us/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="search-menu-icon">
+                <img src="images/searchIcon.svg" alt="search-icon" />
+            </div> -->
+            <div class="search-menu-icon" onclick="togglePopupnav()">
+                <img src="images/menuicon.svg" alt="menu-icon" />
+            </div>
+            <!-- Popup box -->
+            <div class="popup-container" id="popup">
+                <div class="popup-content">
+                    <div class="popup-close" onclick="togglePopupnav()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z" />
+                        </svg>
+                    </div>
+                    <div class="popup-links">
+                        <a href="../../index.html" class="popup-links-content1">Home</a>
+                        <a href="../../About us/about us.html" class="popup-links-content1">About Us</a>
+                        <a href="../../Service Page/Service.html" class="popup-links-content1">Services</a>
+                        <a href="../../contact-us/contact.html" class="popup-links-content1">Contact</a>
+                        <a href="#">Industries</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">Careers</a>
+
+
+                    </div>
+                    <div class="popup-social-icons">
+                        <a href="https://x.com/CubeAISolutions" target="_blank"><img src="images/Twitter.svg" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/cubeaisolutions_tech?igsh=MXEzamNmbTRsYmlyMA==" target="_blank"><img src="images/Instagram.svg" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/profile.php?id=61561157782258" target="_blank"><img src="images/Facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.linkedin.com/company/cubeaisolutions-tech-pvt-ltd" target="_blank"><img src="images/Linkedin.svg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-------------------------------- ct-nav ------------------------->
+    <div class="header-content" id="header-content">
+        <div class="pop-head">
+            <div class="logo" id="header-logo">
+                <a href="../../Service Page/Service.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a><a class="navbar-brand"> &nbsp;Cloud Engineering</a>
+            </div>
+            <div class="search-menu-icon menu-icon" onclick="togglePopup('header-popup', this)">
+                <img src="images/menuicon.svg" alt="menu-icon" />
+                <i class="fas fa-caret-down"></i>
+            </div>
+        </div>
+        <nav>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#what-we-do">What we do</a></li>
+                <li><a href="#tough_challenge">Solutions</a></li>
+                <li><a href="#trending">Trending</a></li>
+                <li><a href="#Future">Future plan</a></li>
+            </ul>
+        </nav>
+        <div class="popup-container left-popup" id="header-popup">
+            <div class="popup-content">
+                <div class="popup-close"
+                    onclick="togglePopup('header-popup', document.querySelector('.header-content .menu-icon'))">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z" />
+                    </svg>
+                </div>
+                <div class="popup-links">
+                    <a href="#what-we-do">What we do</a>
+                    <a href="#tough_challenge">Solutions</a>
+                    <a href="#trending">Trending</a>
+                    <a href="#Future">Future plan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------- banner -------------------------->
+    <section class="banner">
+        <!-- <img class="ce-banner" src="./Images/ce-banner.svg"> -->
+        <h1 class="ce-banner-heading">Architecting Cloud Solutions</br> for Tomorrow's Challenges</h1>
+        <p class="ce-banner-para">Our team comprises seasoned data analytics professionals with</br> expertise in
+            diverse industries and domains, enabling us to</br>deliver tailored solutions that address your unique
+            business</br> challenges and opportunities.We leverage cutting-edge</br> technologies, including AI, machine
+            learning, and big data</br> analytics, to extract valuable insights from your data and drive</br> strategic
+            decision-making.</p>
+    </section>
+    <section class="cloud-technology">
+        <img class="ct-img" src="./Images/cloud technology.svg">
+        <div class="ct-details">
+            <img class="ct-lines" src="./Images/three lines.svg">
+            <div class="ct-details-item">
+                <h4 class="ct-heading">What we do ?</h4>
+                <p class="ct-para">Our cloud engineering services</br> encompass cloud migration planning,</br>
+                    execution,
+                    and
+                    optimization. Ensuring a</br> seamless transition to the cloud while</br> maximizing performance,
+                    scalability, and</br> cost efficiency. We design and deploy</br> cloud infrastructure solutions
+                    tailored
+                    to</br> the unique needs and requirements of</br> businesses, leveraging best practices,</br>
+                    automation,and scalability to deliver</br> robust and reliable architectures.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------- ct-features ------------------------>
+    <section class="ct-features">
+        <h1>Tackling Your Toughest Challenges in the Cloud <br> Engineering: </h1>
+        <div class="ct-features-container">
+            <div class="ct-features-items item1">
+                <p class="content1">How Cloud Engineering Changes the World in <br>Technology Perspective:</p>
+                <h4>Scalability and Flexibility:</h4>
+                <p class="content2">Cloud engineering enables businesses to <br>scale their infrastructure dynamically,
+                    <br>adapting to changing demands and <br>
+                    optimizing resource utilization.</p>
+            </div>
+            <div class="ct-features-items item2">
+                <img src="Images/saas.png" alt="" width="300px">
+            </div>
+            <div class="ct-features-items item3">
+                <h4>Cost Efficiency:</h4>
+                <p>By leveraging cloud services, <br>businesses can reduce upfront capital <br>expenditures and
+                    operational costs,<br>paying only for the resources they <br>consuming and optimizing costs
+                    <br>through resource optimization and <br>automation.</p>
+            </div>
+            <div class="ct-features-items item4">
+                <h4>Global Accessibility:</h4>
+                <p>Cloud engineering facilitates global <br>accessibility to data and applications,<br>enabling seamless
+                    collaboration, real- <br>time communication, and distributed <br>workforce management.</p>
+            </div>
+            <div class="ct-features-items item5">
+                <img src="Images/upload.jpg" alt="" width="300px">
+            </div>
+            <div class="ct-features-items item6">
+                <h4>Innovation Acceleration:</h4>
+                <p>Cloud platforms provide a fertile <br>ground for innovation, empowering <br>businesses to experiment
+                    with <br>emerging technologies, rapidly <br>develop and deploy new solutions,<br>and stay ahead of
+                    the competition.</p>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------- ct-trending -------------------------->
+    <section class="ct-trending">
+        <h1>What's Trending in the Cloud Engineering:</h1>
+        <div class="ct-trending-container">
+            <div class="ct-trending-item1">
+                <h4>Multi-Cloud and Hybrid Cloud Strategies:</h4>
+                <p>Businesses are adopting multi- <br>cloud and hybrid cloud <br> strategies to leverage the <br>
+                    strengths of different cloud <br> providers and optimize <br>performance, reliability, and
+                    <br>cost-effectiveness.</p>
+                <img src="Images/multi-cloud.jpg" alt="">
+            </div>
+            <div class="ct-trending-item2">
+                <img src="Images/server_4996666 1.png" alt="">
+            </div>
+            <div class="ct-trending-item3">
+                <h4>Edge Computing:</h4>
+                <p>Edge computing is emerging <br>as a key trend, enabling <br>low-latency processing and <br>real-time
+                    insights by moving <br>computation closer to the <br>data source, supporting use <br>cases such as
+                    IoT, AI <br>inference, and content <br>delivery.</p>
+                <img src="images/cityscape.jpg" alt="">
+            </div>
+            <div class="ct-trending-item4">
+                <img src="Images/cloud-computing_7159569 1.png" alt="">
+            </div>
+            <div class="ct-trending-item5">
+                <h4>Serverless Computing:</h4>
+                <p>Serverless computing is <br>gaining traction, allowing <br>businesses to focus on <br>application
+                    development <br>and innovation without <br>managing infrastructure, <br>scaling automatically, and
+                    <br>paying only for the <br>resources used.</p>
+                <img src="images/serverless.jpg" alt="">
+            </div>
+            <div class="ct-trending-item6">
+                <img src="Images/edge-computing_11245887 1.png" alt="">
+            </div>
+            <div class="ct-trending-item7">
+                <h4>Multi-Cloud and Hybrid <br>Cloud Strategies:</h4>
+                <p>Businesses are adopting multi-<br>cloud and hybrid cloud <br>strategies to leverage the <br>strengths
+                    of different cloud <br>providers and optimize <br>performance, reliability, and
+                    <br>cost-effectiveness.</p>
+                <img src="Images/multi-cloud.jpg" alt="" width="300px">
+            </div>
+            <div class="ct-trending-item8">
+                <img src="Images/server_4996666 1.png" alt="" width="300px">
+            </div>
+            <div class="ct-trending-item9">
+                <h4>Edge Computing:</h4>
+                <p>Edge computing is emerging <br>as a key trend, enabling <br>low-latency processing and <br>real-time
+                    insights by moving <br>computation closer to the <br>data source, supporting use <br>cases such as
+                    IoT, AI <br>inference, and content <br>delivery.</p>
+                <img src="images/cityscape.jpg" alt="" width="300px">
+            </div>
+            <div class="ct-trending-item10">
+                <img src="Images/cloud-computing_7159569 1.png" alt="" width="300px">
+            </div>
+            <div class="ct-trending-item11">
+                <h4>Serverless Computing:</h4>
+                <p>Serverless computing is <br>gaining traction, allowing <br>businesses to focus on <br>application
+                    development <br>and innovation without <br>managing infrastructure, <br>scaling automatically, and
+                    <br>paying only for the <br>resources used.</p>
+                <img src="images/serverless.jpg" alt="" width="300px">
+            </div>
+            <div class="ct-trending-item12">
+                <img src="Images/edge-computing_11245887 1.png" alt="" width="300px">
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------------- form --------------------------->
+    <div class="main-container">
+        <div class="contact-form-container">
+            <div class="header-form">
+                <div class="company-info">
+                    <div class="company-logo">
+                        <h1>CubeAISolutionsTech</h1>
+                    </div>
+
+                    <img src="./images/cas-logo.svg" alt="Company Logo" />
+                </div>
+                <div class="enquiry-title">
+                    <h2>For Enquiry</h2>
+                </div>
+            </div>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="aac69ced-9d46-4fec-a5ba-97d7cd98b5ed">
+                <input type="hidden" name = "Page" value="Cloud Engineering">
+
+           
+                <div class="form-group">
+                    <h3>Name</h3>
+                    <input type="text" id="fullName" name="Name" placeholder="Enter your Name.." />
+                </div>
+                <div class="form-group">
+                    <h3>Phone No</h3>
+                    <input type="tel" id="phoneNumber" name="Phone Number" placeholder="Enter your Phone Number.." />
+                </div>
+                <div class="form-group">
+                    <h3>Email</h3>
+                    <input type="email" id="email" name="Email" placeholder="Enter your Email.." />
+                </div>
+                <div class="form-group">
+                    <h3>Message</h3>
+                    <textarea id="message" name="Message" placeholder="Your message here.." rows="4"></textarea>
+                </div>
+
+            
+            <center>
+                <button type="submit">Submit</button>
+            </center>
+        </form>
+        </div>
+    </div>
+    <script>
+        function togglePopupnav() {
+            var popup = document.getElementById("popup");
+            if (popup.style.display === "block") {
+                popup.style.display = "none";
+            } else {
+                popup.style.display = "block";
+            }
+        }
+    </script>
+     <script src="ce.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Machine Learning</title>
+  <link rel="stylesheet" href="ml.css" />
+  <link rel="stylesheet" href="ml-nav.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="icon" type="image/cube-icon" href="../../../favicon.png">
+</head>
+
+<body>
+  <!-- ////header///// -->
+  <div class="full-screen">
+    <header id="navbarr">
+      <div class="navbar-logo">
+        <img src="images/cas-logo.svg" alt="Logo" />
+        <a class="cubeaisolutions"><span style="color: #004e69">C</span>ube<span style="color: #004e69">A</span><span
+            style="color: #2596be">I</span><span style="color: #004e69">S</span>olutions</a>
+      </div>
+      <div class="navbar-right">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../About us/about us.html">About</a></li>
+            <li><a href="../../Service Page/Service.html">Services</a></li>
+            <li><a href="../../contact-us/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- <div class="search-menu-icon">
+            <img src="./images/searchIcon.svg" alt="search-icon" />
+          </div> -->
+        <div class="search-menu-icon search-icon" onclick="togglePopup('popup')">
+          <img src="images/menuicon.svg" alt="menu-icon" />
+        </div>
+        <!-- Popup box -->
+        <div class="popup-container" id="popup">
+          <div class="popup-content">
+            <div class="popup-close" onclick="togglePopup('popup')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z" />
+              </svg>
+            </div>
+            <div class="popup-links">
+              <a href="../../index.html" class="popup-links-content1">Home</a>
+              <a href="../../About us/about us.html" class="popup-links-content1">About Us</a>
+              <a href="../../Service Page/Service.html" class="popup-links-content1">Services</a>
+              <a href="../../contact-us/contact.html" class="popup-links-content1">Contact</a>
+              <a href="#">Industries</a>
+              <a href="#">Gallery</a>
+              <a href="#">Careers</a>
+            </div>
+            <div class="popup-social-icons">
+              <a href="https://x.com/CubeAISolutions" target="_blank"><img src="images/Twitter.svg" alt="Twitter"></a>
+              <a href="https://www.instagram.com/cubeaisolutions_tech?igsh=MXEzamNmbTRsYmlyMA==" target="_blank"><img
+                  src="images/Instagram.svg" alt="Instagram"></a>
+              <a href="https://www.facebook.com/profile.php?id=61561157782258" target="_blank"><img
+                  src="images/Facebook.svg" alt="Facebook"></a>
+              <a href="https://www.linkedin.com/company/cubeaisolutions-tech-pvt-ltd" target="_blank"><img
+                  src="images/Linkedin.svg" alt="LinkedIn"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- header-content -->
+    <header id="navbar" style="background-color: black; color: rgb(255, 255, 255)">
+      <div class="navbar-logo">
+        <p class="left_arrow"><a href="../../Service Page/Service.html"><i class="fas fa-arrow-left"></i></a></p>
+        <h1>&nbsp;Machine Learning</h1>
+      </div>
+      <div class="navbar-right">
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a style="color: rgb(255, 255, 255)" href="#two">What we do</a>
+            </li>
+            <li>
+              <a style="color: rgb(255, 255, 255)" href="#three">Solutions</a>
+            </li>
+            <li>
+              <a style="color: rgb(255, 255, 255)" href="#six">Trending</a>
+            </li>
+            <li>
+              <a style="color: rgb(255, 255, 255)" href="#contact">Future plan</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-icon" id="menuIcon">
+          <span><i class="fa-solid fa-caret-down"></i></span>
+        </div>
+        <!-- Popup box -->
+        <div class="popup-containerr" id="popupContainer">
+          <div class="popup-contentt">
+            <ul>
+              <li>
+                <a class="close" onclick="closemenu()">&#10006;</a>
+              </li>
+              <li><a href="#two">What we do</a></li>
+              <li><a href="#three">Solutions</a></li>
+              <li><a href="#six">Trending</a></li>
+              <li><a href="#">Future plan</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <div class="hero fir" id="one">
+      <div class="hero-content">
+        <h1>Architects of Intelligent Transformation</h1>
+        <p>
+          To guide you through the deployment and optimization of machine
+          learning models, ensuring seamless integration into your existing
+          infrastructure and continuous improvement over time.
+        </p>
+      </div>
+    </div>
+    <div class="bars" style="background-color: black">
+      <p align="right" style="margin: 0">
+        <img src="images/Group 39484.png" alt="Image" />
+      </p>
+    </div>
+    <div class="hero sec" id="two">
+      <div class="hero-content" id="left-content">
+        <h1>What we do ?</h1>
+        <p>
+          Our machine learning experts collaborate with you to develop
+          customized machine learning solutions that address your specific
+          business challenges and objectives.We leverage cutting-edge machine
+          learning algorithms and techniques to build robust and scalable
+          models that deliver actionable insights and drive business value.
+        </p>
+        <img class="image-right" src="images/Rectangle 1368.png" alt="" />
+      </div>
+    </div>
+    <div class="video-section" style="background-color: rgba(45, 33, 39, 255)">
+      <video autoplay muted loop class="background-video">
+        <source src="images/-306b-4481-a0f0-532b8c1d90d1.mp4" type="video/mp4" />
+      </video>
+      <div class="video-text">
+        <h2>
+          How the Machine Learning Domain Changes the World in Technology
+          Perspective:
+        </h2>
+        <br />
+        <h2 style="color: aqua">Predictive Analytics and Optimization</h2>
+        <p>
+          Machine learning algorithmsenable predictive analytics, allowing
+          businesses to forecast trends and market dynamics with precision. By
+          leveraging vast amounts of data, machine learning optimizes
+          processes, enhances decision-making, and drives strategic
+          initiatives.
+        </p>
+      </div>
+    </div>
+
+    <div class="hero thrid" id="three">
+      <div class="hero-content" id="left-content">
+        <h1>Automation and Efficiency:</h1>
+        <p>
+          Machine learning powers automation across industries, streamlining
+          workflows, and eliminating manual tasks. From automated customer
+          support chatbots to predictive maintenance in manufacturing, machine
+          learning boosts efficiency, reduces costs, and accelerates
+          innovation.
+        </p>
+      </div>
+    </div>
+
+    <div class="hero four" id="four">
+      <div class="hero_four-content">
+        <h1>Personalization and Recommendation Systems</h1>
+        <p>
+          Machine learning algorithms drive personalized experiences for
+          users, from tailored product recommendations to personalized content
+          delivery. By analyzing user behavior and preferences, machine
+          learning enhances customer engagement, satisfaction, and loyalty.
+        </p>
+      </div>
+    </div>
+
+    <div class="hero five" id="five">
+      <div class="hero_five-content">
+        <h1>Image and Speech Recognition:</h1>
+        <p>
+          Machine learning technologies like computer vision and natural
+          language processing enable image and speech recognition,
+          revolutionizing industries from healthcare to retail. By extracting
+          insights from visual and auditory data, machine learning drives
+          innovation and unlocks new possibilities.
+        </p>
+      </div>
+    </div>
+    <div class="hero four">
+      <div class="hero_four-content">
+        <h1>Fraud Detection and Prevention:</h1>
+        <p>
+          Financial institutions leverage machine learning algorithms to
+          detect and prevent fraud activities. By examining transaction
+          patterns and identifying anomalies, machine learning models can
+          quickly and accurately flag potential fraud in real-time. This
+          capability not only protects consumers and businesses but also
+          strengthens the security systems.
+        </p>
+      </div>
+    </div>
+
+    <div class="hero five">
+      <div class="hero_five-content">
+        <h1>Healthcare Diagnostics and Treatment:</h1>
+        <p>
+          Machine learning revolutionizes healthcare with precise diagnostics
+          and personalized treatment plans. Analyzing extensive medical data
+          like patient records and genomic information, algorithms aid in
+          early disease detection. Tailored treatment plans optimize health
+          outcomes, elevating care quality.
+        </p>
+      </div>
+    </div>
+    <!-- ---------- -->
+    <div class="">
+      <h1 class="roboh2" style="margin-left: 30px">
+        What's Trending in the Machine Learning ?
+      </h1>
+      <br />
+      <div class="parent" id="six">
+        <div class="robthand">
+          <img src="images/image 54.png" alt="" />
+        </div>
+        <div class="info-box">
+          <h2>Federated Learning:</h2>
+          <p>
+            Federated learning enables collaborative model training across
+            decentralized data sources, preserving data privacy and security
+            while harnessing collective intelligence for model improvement.
+          </p>
+        </div>
+        <div class="image-info">
+          <img src="images/Rectangle 13761.png" alt="" />
+        </div>
+      </div>
+
+      <div class="parent_flip">
+        <div class="robthand_flip">
+          <img src="images/image 54 - Copy.png" alt="" />
+        </div>
+        <div class="info-box_flip">
+          <h2>Responsible AI and Ethics:</h2>
+          <p>
+            There is a growing emphasis on responsible AI practices, including
+            fairness, accountability, transparency, and ethics in machine
+            learning development and deployment.
+          </p>
+        </div>
+        <div class="image-info_flip">
+          <img src="images/Rectangle 1376.png" alt="" />
+        </div>
+      </div>
+
+      <div class="parent">
+        <div class="robthand">
+          <img src="images/image 54.png" alt="" />
+        </div>
+        <div class="info-box">
+          <h2>Explainable AI:</h2>
+          <p>
+            Explainable AI techniques enhance the interpretability of machine
+            learning models, enabling stakeholders to understand the rationale
+            behind model predictions and decisions.
+          </p>
+        </div>
+        <div class="image-info">
+          <img src="images/Rectangle 13762.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ////////// -->
+
+  <div class="main-container">
+    <div class="contact-form-container" style="margin-top: 20%">
+      <div class="header-form">
+        <div class="company-info">
+          <div class="company-logo">
+            <h1>CubeAISolutions Tech</h1>
+          </div>
+
+          <img src="images/CUBEAISOLUTIONS_LOGO_-removebg-preview 1.png" alt="Company Logo" />
+        </div>
+        <div class="enquiry-title">
+          <h2>For Enquiry</h2>
+        </div>
+      </div>
+
+<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="aac69ced-9d46-4fec-a5ba-97d7cd98b5ed">
+  <input type="hidden" name = "Page" value="Machine Learning">
+
+        <div class="input-container">
+          <div class="form-group">
+            <p class="form-p">Name</p>
+            <input type="text" id="fullName" name="Name" placeholder="Enter your Name" />
+            <i class="fas fa-user icon"></i>
+          </div>
+        </div>
+        <div class="input-container">
+          <div class="form-group">
+            <p class="form-p">Phone Number</p>
+            <input type="tel" id="phoneNumber" name="Phone Number" placeholder="Enter your Phone Number" />
+            <i class="fas fa-phone icon"></i>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-container">
+            <p class="form-p">Email</p>
+            <input type="email" id="email" name="Email" placeholder="Enter your Email" />
+            <i class="fas fa-envelope icon"></i>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p class="form-p">Message</p>
+          <div class="pencil"><i class="fas fa-pencil-alt"></i></div>
+
+          <textarea id="message" name="Message" placeholder="Your message here." rows="4"></textarea>
+        </div>
+      
+      <center>
+        <button type="submit">Submit</button>
+      </center>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function togglePopup() {
+      var popup = document.getElementById("popup");
+      if (popup.style.display === "block") {
+        popup.style.display = "none";
+      } else {
+        popup.style.display = "block";
+      }
+    }
+
+    document
+      .getElementById("menuIcon")
+      .addEventListener("click", function () {
+        var popup = document.getElementById("popupContainer");
+        if (popup.style.display === "none" || popup.style.display === "") {
+          popup.style.display = "flex";
+        } else {
+          popup.style.display = "none";
+        }
+      });
+
+    document
+      .getElementById("popupContainer")
+      .addEventListener("click", function (e) {
+        if (e.target === this) {
+          this.style.display = "none";
+        }
+      });
+
+    // Add this block to handle closing the popup when the close element is clicked
+    document.querySelector(".close").addEventListener("click", function () {
+      var popup = document.getElementById("popupContainer");
+      popup.style.display = "none";
+    });
+  </script>
+  <script src="ml.js"></script>
+</body>
+
+</html>

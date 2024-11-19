@@ -1,0 +1,297 @@
+*{
+  font-family: 'lato', sans-serif;
+}
+  #navbarr,#navbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+  }
+  #navbarr {
+    position:sticky;
+    z-index: 1;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-logo img {
+    width: 100px; /* Adjust the width of the logo as needed */
+  }
+  
+  .cubeaisolutions {
+    font-size: xx-large;
+    color: #2596be;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    transition: color 0.3s; /* Add transition for smooth color change */
+  }
+  
+  .nav-links li a:hover {
+    color: #004E69; /* Change color on hover */
+  }
+  
+  .search-menu-icon img{
+    width: 25px; 
+    margin-right: 20px;
+  }
+  
+
+    /* popup navbar in the header  */
+
+
+    .popup-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 50%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+        display: none;
+        opacity: 0.86;
+      }
+  
+      .popup-content {
+        padding: 10px;
+        font-size: 22px;
+    font-family: 'Lato', sans-serif;
+        
+      }
+  
+      .popup-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+  
+      .popup-close svg {
+        fill: #fff;
+        width: 20px;
+      }
+  
+      .popup-links {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .popup-links a {
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 10px;
+      }
+  
+      .popup-social-icons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+  
+      .popup-social-icons img {
+        width: 30px;
+      }
+      .searchicon-underhed{
+        display: none;
+      }
+     
+  
+  
+  @media (min-width:320px) and (max-width:426px){
+  .nav-links{
+      display: none;
+    }
+
+    .navbar-logo h1{
+      margin-left: 1%;
+      font-size: 1.5rem;
+      width: 237px;
+
+    }
+    .searchicon-underhed{
+      display: block;
+    }
+    .searchicon-underhed img{
+      width: 80%;
+    }
+   
+   
+  }
+      /* For screens smaller than 768px (Mobile) */
+  @media (max-width: 768px) {
+    .navbar-logo img {
+      width: 80px; /* Adjust logo size for mobile */
+    }
+  
+    .cubeaisolutions {
+      font-size: large; /* Adjust font size for mobile */
+    }
+  
+    .nav-links li a{
+    font-size: 15px;
+    }
+  
+    
+    .search-icon img {
+      width: 20px; /* Adjust search icon size for mobile */
+    }
+  
+    .menu-icon {
+      display: flex; /* Show menu icon */
+    }
+  
+    /* .popup-container {
+      width: 100%; Set popup width to full screen
+      height: 100%; Set popup height to full screen
+      padding-top: 60px; Adjust padding for close button
+    } */
+  
+  
+    .popup-content {
+      font-size: 18px; /* Adjust font size for mobile */
+    }
+  
+    .popup-close {
+      top: 20px; /* Adjust close button position */
+      right: 20px; /* Adjust close button position */
+    }
+    .popup-container {
+     
+      height: 58%;
+     
+    }
+    
+  }
+  @media (min-width:426px)and (max-width:768px){
+    
+     .popup-container{
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 50%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      display: none;
+    }
+    .popup-links-content1{
+      display: none;
+    }
+    .popup-container {
+     
+      height: 35%;
+     
+    }
+    
+     }
+   
+  
+  /* For screens between 769px and 1024px (Tablet) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .navbar-logo img {
+      width: 100px; /* Adjust logo size for tablet */
+    }
+  
+    .cubeaisolutions {
+      font-size: x-large; /* Adjust font size for tablet */
+    }
+  
+    .menu-icon {
+      display: flex; /* Show menu icon */
+    }
+  
+    .popup-container {
+      width: 250px; /* Set popup width for tablet */
+      height: 60%; /* Set popup height for tablet */
+    }
+  
+    .popup-content {
+      font-size: 20px; /* Adjust font size for tablet */
+    }
+  
+    .popup-close {
+      top: 30px; /* Adjust close button position */
+      right: 30px; /* Adjust close button position */
+    }
+    .popup-links-content1{
+      display: none;
+    }
+    .popup-container {
+     
+      height: 40%;
+     
+    }
+  }
+  
+  /* For screens larger than 1024px (Laptop L and above) */
+  @media (min-width: 1025px) {
+    .navbar-logo img {
+      width: 120px; /* Adjust logo size for Laptop L and above */
+    }
+  
+    .cubeaisolutions {
+      font-size: xx-large; /* Adjust font size for Laptop L and above */
+    }
+  
+    .nav-links {
+      display: flex; /* Show nav links */
+    }
+  
+    .search-icon img {
+      width: 25px; /* Adjust search icon size for Laptop L and above */
+    }
+  
+    .menu-icon {
+      display: none; /* Hide menu icon */
+    }
+  
+    .popup-container {
+      width: 200px; /* Set popup width for Laptop L and above */
+      height: 50%; /* Set popup height for Laptop L and above */
+    }
+  
+    .popup-content {
+      font-size: 22px; /* Adjust font size for Laptop L and above */
+    }
+  
+    .popup-close {
+      top: 10px; /* Adjust close button position */
+      right: 10px; /* Adjust close button position */
+    }
+    .popup-links-content1{
+      display: none;
+    }
+    .popup-container {
+     
+      height: 40%;
+     
+    }
+  }  

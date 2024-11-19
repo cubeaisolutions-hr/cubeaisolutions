@@ -1,0 +1,5598 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navigation */
+#navbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 100px;
+}
+
+.cubeaisolutions {
+    font-size: xx-large;
+    color: #2596be;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #004E69;
+}
+
+.search-menu-icon img {
+    width: 25px;
+    margin-right: 20px;
+}
+
+a.cubeaisolutions:hover{
+    text-decoration: none;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    display: none;
+    opacity: 0.86;
+}
+
+.popup-content {
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.popup-close svg {
+    fill: #000000;
+    width: 20px;
+}
+
+.popup-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-links a {
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.popup-links a:hover {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+.popup-social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.popup-social-icons img {
+    width: 30px;
+}
+
+a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.navbar {
+    background-color: #00176894;
+    position: sticky !important;
+    top: 90px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.navbar .nav-link {
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-toggler {
+    border: none;
+    z-index: 1001;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* banner section */
+.home {
+    position: relative;
+    background: url('images/banner.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(181, 207, 223, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.overlay-text p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.overlay-text img {
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+
+
+/* Platform Overview Section */
+.platform {
+    padding: 20px;
+}
+
+.platform h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+p.mb-4 {
+    font-size: 20px;
+}
+
+li.mb-2 {
+    font-size: 20px;
+}
+
+.circle-bg {
+    background-color: #d1e3ef;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circle-bg img {
+    width: 80%;
+    margin-top: -58%;
+}
+
+.circle-bg h5 {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    color: black;
+}
+
+.count {
+    transition: all 0.5s ease-in-out;
+}
+
+/* Apply for internships, workshops, sessions and get certified */
+.card {
+    width: 300px;
+    height: 400px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.card-img-top {
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px !important;
+    font-family: "Lato",sans-serif;
+}
+
+.card-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #004E69;
+    border: none;
+    width: 50%;
+}
+.card-button:hover{
+    background-color: #004E69;
+}
+.container {
+    justify-content: center;
+}
+.additional-cards {
+    display: none; 
+}
+.view .btn-primary{
+    background-color: transparent;
+    color: black;
+    border: none;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 20px !important;
+    font-family: "Lato",sans-serif;
+}
+#toggle-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* Popup Overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* Popup Content */
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    text-align: center;
+}
+
+
+#close-popup {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.popup-buttons {
+    margin-top: 20px;
+}
+
+.popup-buttons .btn {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* seasonal internship */
+.internships-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.internship-card {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    min-width: 200px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.internship-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.internship-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.internship-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+
+.apply-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: rgba(0, 78, 105, 0.6); /* Lighter by default */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+
+.apply-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker on hover */
+}
+
+.apply-btn.active {
+    background-color: rgba(0, 78, 105, 1); /* Darker when active */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .internships-container {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+
+/* enquiry form */
+.form-container {
+    max-width: 1200px;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #D9D9D9;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.form-control {
+    border-bottom: 2px solid #000 !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000;
+    background: transparent !important;
+    max-width: 400px;
+    outline: none;
+    box-shadow: none;
+}
+.btn-custom {
+    background-color: #6c8497 !important;
+    color: #000 !important;
+    display: block !important;
+    padding: 10px 25px !important;
+    margin: 0 auto !important;
+    border-radius: 10px;
+}
+.btn-custom:hover {
+    background-color: #5a7183;
+}
+/* Responsive Styles */
+
+@media (max-width: 475px) {
+    .navbar .collapse {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-brand {
+        margin: 5px;
+        color: white;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 790px) {
+    .navbar .collapse {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar {
+        position: sticky;
+        top: 60px;
+    }
+}
+
+@media (max-width:1024px) {
+    .overlay-text h1 {
+        font-size: 40px;
+    }
+
+    .overlay-text p {
+        font-size: 16px;
+    }
+
+    .home {
+        height: 70vh;
+    }
+}
+
+@media (max-width:768px) {
+    .home {
+        height: 60vh;
+    }
+
+    .overlay-text {
+        padding: 15px;
+    }
+
+    .overlay-text h1 {
+        font-size: 32px;
+    }
+
+    .overlay-text p {
+        font-size: 16px;
+        width: 100% !important;
+    }
+}
+
+@media (max-width:576px) {
+    .overlay-text h1 {
+        font-size: 23px;
+    }
+
+    .overlay-text p {
+        font-size: 15px;
+    }
+
+    .home {
+        height: 70vh;
+    }
+}
+
+@media (min-width:320px) and (max-width:426px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-logo img {
+        width: 40px;
+    }
+
+    .cubeaisolutions {
+        font-size: large;
+    }
+
+    .nav-links li a {
+        font-size: 15px;
+    }
+
+    .search-icon img {
+        width: 20px;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .popup-container {
+        width: 200px;
+        height: 60%;
+        padding-top: 10px;
+    }
+
+    .popup-content {
+        font-size: 18px;
+    }
+
+    .popup-close {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px) {
+    .popup-container {
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 40%;
+        padding-top: 10px;
+    }
+
+    .popup-links-content1 {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar-logo img {
+        width: 100px;
+    }
+
+    .cubeaisolutions {
+        font-size: x-large;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .popup-container {
+        width: 250px;
+        height: 35%;
+        padding-top: 10px;
+    }
+
+    .popup-content {
+        font-size: 20px;
+    }
+
+    .popup-close {
+        top: 30px;
+        right: 30px;
+    }
+
+    .popup-links-content1 {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar-logo img {
+        width: 70px;
+    }
+
+    .cubeaisolutions {
+        font-size: xx-large;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .search-icon img {
+        width: 25px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .popup-container {
+        width: 200px;
+        height: 30%;
+        padding-top: 10px;
+    }
+
+    .popup-content {
+        font-size: 22px;
+    }
+
+    .popup-close {
+        top: 10px;
+        right: 10px;
+    }
+
+    .popup-links-content1 {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .platform {
+        padding: 10px;
+    }
+
+    .platform h2 {
+        font-size: 24px;
+    }
+
+    p.mb-4,
+    li.mb-2 {
+        font-size: 16px;
+    }
+
+    .circle-bg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .circle-bg h5 {
+        font-size: 14px;
+    }
+
+    .circle-bg img {
+        max-width: 40px;
+    }
+
+    .Graduation-hat {
+        max-width: 100%;
+        height: auto;
+        margin-top: 15% !important;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .platform h2 {
+        font-size: 28px;
+    }
+
+    p.mb-4,
+    li.mb-2 {
+        font-size: 18px;
+    }
+
+    .circle-bg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .circle-bg h5 {
+        font-size: 16px;
+    }
+
+    .Graduation-hat {
+        max-width: 100%;
+        height: auto;
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .platform h2 {
+        font-size: 30px;
+    }
+
+    p.mb-4,
+    li.mb-2 {
+        font-size: 18px;
+    }
+
+    .circle-bg {
+        width: 140px;
+        height: 140px;
+    }
+
+    .circle-bg h5 {
+        font-size: 18px;
+    }
+
+    .Graduation-hat {
+        max-width: 60% !important;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .platform h2 {
+        font-size: 32px;
+    }
+
+    p.mb-4,
+    li.mb-2 {
+        font-size: 20px;
+    }
+
+    .circle-bg {
+        width: 130px;
+        height: 130px;
+    }
+
+    .circle-bg h5 {
+        font-size: 18px;
+    }
+
+    .Graduation-hat {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+/* Detailed Project Roadmap */
+.roadmap{
+    margin-top: 4%;
+    margin-left: 11%;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+}
+
+.container2{
+    background-color: #B5CFDF;
+    margin-top: 3%;
+    width: 80%;
+    margin-left: 11%;
+    height: 470px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.planning{
+    margin-top: 6%;
+    margin-left: 8%;
+    width: 15%;
+}
+.week{
+    position: absolute;
+    margin-top: 14%;
+    margin-left: -3%;
+    width: 11.5%;
+}
+.phase{
+    position: absolute;
+    margin-top: -8%;
+    margin-left: 9%;
+    font-size: 20px;
+    font-weight: 700;
+    width: 10%;
+}
+.phase1{
+    position: absolute;
+    margin-top: 1.5%;
+    margin-left: 18%;
+    font-size: 20px;
+    font-weight: 700;
+    width: 10%;
+}
+.one{
+    position: absolute;
+    width: 11.5%;
+    margin-top:15%;
+    margin-left: -13%;
+}
+.two{
+    position: absolute;
+    width: 11.5%;
+    margin-top:3.8%;
+    margin-left: -1.8%;
+}
+.squa{
+    position: absolute;
+    margin-top: 19.8%;
+    width: 8%;
+    margin-left: -13.8%;
+}
+.squ{
+    position: absolute;
+    margin-top: 3%;
+    width: 8%;
+    margin-left: 2.4%;
+}
+.line6 {
+    margin-top: 17%;
+    left:-2%;
+    width:90%;
+    margin-left: 5%;
+    height: 1px;
+    background-color:#FFCD07;
+    border: 1.5px solid #FFCD07
+}
+
+.head4{
+    position: absolute;
+    margin-top: -13%;
+    width: 40%;
+    margin-left: 34%;
+    text-align: justify;
+}
+.head4 h2{
+    font-size: 25px;
+}
+.head4 p span{
+    position: absolute;
+    margin-top: 4%;
+}
+.container21{
+    background-color: #B5CFDF;
+    margin-top: 3%;
+    width: 80%;
+    margin-left: 11%;
+    height: 470px;
+    font-family: 'Lato', sans-serif;
+}
+.Designing{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: -12%;
+    width: 11.5%;
+}
+.week1{
+    position: absolute;
+    margin-top: 14%;
+    margin-left: -3%;
+    width: 11.5%;
+}
+.phase2{
+    position: absolute;
+    margin-top: 8%;
+    margin-left: -10%;
+    font-size: 20px;
+    font-weight: 700;
+    width: 10%;
+}
+.phase3{
+    position: absolute;
+    margin-top: 19%;
+    margin-left: -0.5%;
+    font-size: 20px;
+    font-weight: 700;
+    width: 10%;
+}
+.three{
+    position: absolute;
+    width: 11.5%;
+    margin-top:15%;
+    margin-left: -13%;
+}
+.four{
+    position: absolute;
+    width: 11.5%;
+    margin-top:3.8%;
+    margin-left: -1.8%;
+}
+.squa1{
+    position: absolute;
+    margin-top: 19.8%;
+    width: 8%;
+    margin-left: -13.8%;
+}
+.squ2{
+    position: absolute;
+    margin-top: 3%;
+    width: 8%;
+    margin-left: 2.4%;
+}
+.head5{
+   margin-left: 81%;
+    margin-top: 0%;
+}
+
+.head6{
+    position: absolute;
+    width: 40%;
+    margin-left: 6%;
+    margin-top: 4%;
+    text-align: justify;
+}
+.head6 h2{
+    font-size: 25px;
+}
+.head6 p span{
+    position: absolute;
+    margin-top: 4%;
+}
+.line7 {
+    position: absolute;
+    margin-top: 31%;
+    left:-2%;
+    width:72%;
+    margin-left: 17%;
+    height: 1px;
+    background-color:#FFCD07;
+    border: 1.5px solid #FFCD07
+}
+.container22{
+    background-color: #B5CFDF;
+    margin-top: 3%;
+    width: 80%;
+    margin-left: 11%;
+    height: 470px;
+    font-family: 'Lato', sans-serif;
+}
+
+.Development{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: -12%;
+    width: 11.5%;
+}
+.week2{
+    position: absolute;
+    margin-top: 14%;
+    margin-left: -3%;
+    width: 11.5%;
+}
+.phase4{
+    position: absolute;
+    margin-top: 8%;
+    margin-left: -10%;
+    font-size: 18px;
+    font-weight: 700;
+    width: 10%;
+}
+.phase5{
+    position: absolute;
+    margin-top: 19%;
+    margin-left: -0.5%;
+    font-size: 20px;
+    font-weight: 700;
+    width: 10%;
+}
+.five{
+    position: absolute;
+    width: 11.5%;
+    margin-top:15%;
+    margin-left: -13%;
+}
+.six{
+    position: absolute;
+    width: 11.5%;
+    margin-top:3.8%;
+    margin-left: -1.8%;
+}
+.squa3{
+    position: absolute;
+    margin-top: 19.8%;
+    width: 8%;
+    margin-left: -13.8%;
+}
+.squ4{
+    position: absolute;
+    margin-top: 3%;
+    width: 8%;
+    margin-left: 2.4%;
+}
+.head7{
+    width: 95%;
+    margin-left:23.5% ;
+    margin-top:2%;
+}
+
+.head8{
+    position: absolute;
+    margin-top:3%;
+    width: 40%;
+    margin-left: 35%;
+    text-align: justify;
+}
+.head8 h2{
+    font-size: 25px;
+}
+.head8 p span{
+    position: absolute;
+    margin-top: 4%;
+}
+.line8 {
+    position: absolute;
+    margin-top: 31%;
+    left:-2%;
+    width:72%;
+    margin-left: 17%;
+    height: 1px;
+    background-color:#FFCD07;
+    border: 1.5px solid #FFCD07
+}
+
+.container23{
+    background-color: #B5CFDF;
+    margin-top: 3%;
+    width: 80%;
+    margin-left: 11%;
+    height: 470px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.testing{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: -12%;
+    width: 11.5%;
+}
+.week3{
+    position: absolute;
+    margin-top: 14%;
+    margin-left: -3%;
+    width: 11.5%;
+}
+.phase6{
+    position: absolute;
+    margin-top: 8%;
+    margin-left: -10%;
+    font-size: 20px;
+    font-weight: 700;
+    width: 10%;
+}
+.phase7{
+    position: absolute;
+    margin-top: 19%;
+    margin-left: -0.5%;
+    font-size: 20px;
+    font-weight: 700;
+    width: 10%;
+}
+.seven{
+    position: absolute;
+    width: 11.5%;
+    margin-top:15%;
+    margin-left: -13%;
+}
+.eight{
+    position: absolute;
+    width: 11.5%;
+    margin-top:3.8%;
+    margin-left: -1.8%;
+}
+.squa5{
+    position: absolute;
+    margin-top: 19.8%;
+    width: 8%;
+    margin-left: -13.8%;
+}
+.squ6{
+    position: absolute;
+    margin-top: 3%;
+    width: 8%;
+    margin-left: 2.4%;
+}
+.head9{
+   margin-left: 81%;
+    margin-top: 0%;
+    width: 130%;
+}
+.head10{
+    position: absolute;
+    width: 40%;
+    margin-left: 6%;
+    margin-top: 3.5%;
+    text-align: justify;
+}
+.head10 h2{
+    font-size: 25px;
+}
+.head10 p span{
+    position: absolute;
+    margin-top: 4%;
+}
+.line9 {
+    position: absolute;
+    margin-top: 31%;
+    left:-2%;
+    width:72%;
+    margin-left: 17%;
+    height: 1px;
+    background-color:#FFCD07;
+    border: 1.5px solid #FFCD07
+}
+
+.container24{
+    background-color: #B5CFDF;
+    margin-top: 3%;
+    width: 80%;
+    margin-left: 11%;
+    height: 470px;
+    font-family: 'Lato', sans-serif;
+}
+.deployment{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: -12%;
+    width: 11.5%;
+}
+.week4{
+    position: absolute;
+    margin-top: 14%;
+    margin-left: -3%;
+    width: 11.5%;
+}
+.phase8{
+    position: absolute;
+    margin-top: 8.5%;
+    margin-left: -11%;
+    font-size: 18px;
+    font-weight: 700;
+    width:5%;
+}
+.phase9{
+    position: absolute;
+    margin-top: 19%;
+    margin-left: 0%;
+    font-size: 20px;
+    font-weight: 700;
+    width: 10%;
+}
+.nine{
+    position: absolute;
+    width: 11.5%;
+    margin-top:15%;
+    margin-left: -13%;
+}
+.ten{
+    position: absolute;
+    width: 11.5%;
+    margin-top:3.8%;
+    margin-left: -1.8%;
+}
+.squa7{
+    position: absolute;
+    margin-top: 19.8%;
+    width: 8%;
+    margin-left: -13.8%;
+}
+.squ8{
+    position: absolute;
+    margin-top: 3%;
+    width: 8%;
+    margin-left: 2.4%;
+}
+.head11{
+    width: 95%;
+    margin-left:23.5% ;
+    margin-top: 2%;
+}
+.head12{
+    position: absolute;
+    margin-top:3.5%;
+    width: 40%;
+    margin-left: 35%;
+    text-align: justify;
+}
+.head12 h2{
+    font-size: 25px;
+}
+.head12 p span{
+    position: absolute;
+    margin-top: 4%;
+}
+.line10 {
+    position: absolute;
+    margin-top: 31%;
+    left:-2%;
+    width:72%;
+    margin-left: 17%;
+    height: 1px;
+    background-color:#FFCD07;
+    border: 1.5px solid #FFCD07
+}
+
+.container25{
+    background-color: #B5CFDF;
+    margin-top: 3%;
+    width: 80%;
+    margin-left: 11%;
+    height: 470px;
+    font-family: 'Lato', sans-serif;
+}
+
+.maintenance{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: -12%;
+    width: 11.5%;
+}
+.week5{
+    position: absolute;
+    margin-top: 14%;
+    margin-left: -3%;
+    width: 11.5%;
+}
+.phase10{
+    position: absolute;
+    margin-top: 8%;
+    margin-left: -11%;
+    font-size: 17px;
+    font-weight: 700;
+    width: 1%;
+}
+.phase11{
+    position: absolute;
+    margin-top: 19%;
+    margin-left: -0.5%;
+    font-size: 20px;
+    font-weight: 700;
+    width: 10%;
+}
+.eleven{
+    position: absolute;
+    width: 11.5%;
+    margin-top:15%;
+    margin-left: -13%;
+}
+.twelve{
+    position: absolute;
+    width: 11.5%;
+    margin-top:3.8%;
+    margin-left: -1.8%;
+}
+.squa9{
+    position: absolute;
+    margin-top: 19.8%;
+    width: 8%;
+    margin-left: -13.8%;
+}
+.squ10{
+    position: absolute;
+    margin-top: 3%;
+    width: 8%;
+    margin-left: 2.4%;
+}
+.head13{
+    margin-left: 81%;
+    margin-top: 1%;
+    width: 100%;
+}
+.head14{
+    position: absolute;
+    width: 40%;
+    margin-left: 6%;
+    margin-top: 3.5%;
+    text-align: justify;
+}
+.head14 h2{
+    font-size: 25px;
+}
+.head14 p span{
+    position: absolute;
+    margin-top: 4%;
+    
+}
+.line11 {
+    position: absolute;
+    margin-top: 31%;
+    left:-2%;
+    width:72%;
+    margin-left: 17%;
+    height: 1px;
+    background-color:#FFCD07;
+    border: 1.5px solid #FFCD07
+}
+
+@media (min-width: 320px) and (max-width: 374px){
+
+.container2{
+    background-color: #B5CFDF;
+    margin-top:8%;
+    width: 80%;
+    margin-left: 11%;
+    height:650px;
+    font-family: 'lato';
+}
+.head3{
+    margin-left: 8%;
+    margin-top: 10%;
+}
+.planning{
+    margin-top: 25%;
+    margin-left: 8%;
+    width: 40%;
+}
+.week{
+    position: absolute;
+    margin-top: 42%;
+    margin-left: -6%;
+    width: 30%;
+}
+.phase{
+    position: absolute;
+    margin-top: -21%;
+    margin-left: 9%;
+    font-size: 14px;
+    font-weight: 700;
+    width: 20%;
+}
+.phase1{
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 38%;
+    font-size: 14px;
+    font-weight: 700;
+    width: 20%;
+}
+.one{
+    position: absolute;
+    width: 29%;
+    margin-top:45%;
+    margin-left: -32%;
+}
+.two{
+    position: absolute;
+    width: 29%;
+    margin-top:16%;
+    margin-left: -3%;
+}
+.squa{
+    position: absolute;
+    margin-top:57.5%;
+    width: 20%;
+    margin-left: -34%;
+}
+.squ{
+    position: absolute;
+    margin-top: 13%;
+    width: 20%;
+    margin-left: 8%;
+}
+.line6{
+    margin-top: 179%;
+    left:-2%;
+    width:90%;
+    margin-left: 5%;
+    height: 1px;
+    background-color:#FFCD07;
+    border: 1.5px solid #FFCD07
+}
+
+.head4{
+    position: absolute;
+    margin-top: 40%;
+    width: 60%;
+    margin-left: 15%;
+    text-align: justify;
+}
+.head4 h2{
+    font-size: 24px;
+    margin-top: -10%;
+
+}
+.head4 p span{
+    position: absolute;
+    margin-top: 8%;
+    margin-left: -18%;
+    text-align: left;
+    font-size: 10px;
+}
+
+.container21{
+    background-color: #B5CFDF;
+    margin-top:8%;
+    width: 80%;
+    margin-left: 11%;
+    height:665px;
+    font-family: 'lato';
+}
+.Designing{
+    margin-top: 19%;
+    margin-left: -29%;
+    width: 40%;
+}
+.week1{
+    position: absolute;
+    margin-top: 42%;
+    margin-left: -7%;
+    width: 30%;
+}
+.phase2{
+    position: absolute;
+    margin-top: 28%;
+    margin-left: -25%;
+    font-size: 14px;
+    font-weight: 700;
+    width: 20%;
+}
+.phase3{
+    position: absolute;
+    margin-top:52%;
+    margin-left: 3%;
+    font-size: 14px;
+    font-weight: 700;
+    width: 20%;
+}
+.three{
+    position: absolute;
+    width: 29%;
+    margin-top:45%;
+    margin-left: -32%;
+}
+.four{
+    position: absolute;
+    width: 29%;
+    margin-top:16%;
+    margin-left: -3%;
+}
+.squa1{
+    position: absolute;
+    margin-top:57.5%;
+    width: 20%;
+    margin-left: -34%;
+}
+.squ2{
+    position: absolute;
+    margin-top: 13%;
+    width: 20%;
+    margin-left: 8%;
+}
+.line7 {
+    margin-top:198%;
+    left:-2%;
+    width:70%;
+    margin-left: 18%;
+    height: 1px;
+    background-color:#FFCD07;
+    border: 1.5px solid #FFCD07
+}
+
+.head5{
+   margin-left: 54%;
+    margin-top: -6%;
+}
+
+.head6{
+    position: absolute;
+    width: 65%;
+    margin-left: 11%;
+    margin-top:82%;
+    text-align: justify;
+}
+.head6 h2{
+    font-size: 24px;
+}
+.head6 p span{
+    position: absolute;
+    margin-top: 8%;
+    font-size: 10px;
+    margin-left: -10%;
+    text-align: left;
+}
+
+.container22{
+    background-color: #B5CFDF;
+    margin-top:8%;
+    width: 80%;
+    margin-left: 11%;
+    height:665px;
+    font-family: 'lato';
+}
+.Development{
+    margin-top: 18%;
+    margin-left: -30%;
+    width: 36%;
+}
+.week2{
+    position: absolute;
+    margin-top: 42%;
+    margin-left: -6%;
+    width: 30%;
+}
+.phase4{
+    position: absolute;
+    margin-top: 27%;
+    margin-left: -27%;
+    font-size: 14px;
+    font-weight: 700;
+    width: 20%;
+}
+.phase5{
+    position: absolute;
+    margin-top: 53%;
+    margin-left:3%;
+    font-size: 14px;
+    font-weight: 700;
+    width: 20%;
+}
+.five{
+    position: absolute;
+    width: 29%;
+    margin-top:45%;
+    margin-left: -32%;
+}
+.six{
+    position: absolute;
+    width: 29%;
+    margin-top:16%;
+    margin-left: -3%;
+}
+.squa3{
+    position: absolute;
+    margin-top:57.5%;
+    width: 20%;
+    margin-left: -34%;
+}
+.squ4{
+    position: absolute;
+    margin-top: 13%;
+    width: 20%;
+    margin-left: 8%;
+}
+.head7{
+    width: 95%;
+    margin-left:54% ;
+    margin-top:-6%;
+}
+
+.head8{
+    position: absolute;
+    margin-top:84%;
+    width: 71%;
+    margin-left: 4%;
+    text-align: justify;
+}
+.head8 h2{
+    font-size: 23px;
+    margin-left: 4%;
+}
+.head8 p span{
+    position: absolute;
+    margin-top: 7%;
+    font-size: 10px;
+    text-align: left;
+}
+.line8 {
+    margin-top:198%;
+    left:-2%;
+    width:70%;
+    margin-left: 18%;
+    height: 1px;
+    background-color:#FFCD07;
+    border: 1.5px solid #FFCD07
+}
+
+.container23{
+    background-color: #B5CFDF;
+    margin-top:8%;
+    width: 80%;
+    margin-left: 11%;
+    height:665px;
+    font-family: 'lato';
+}
+.testing{
+    margin-top: 19%;
+    margin-left: -29%;
+    width: 40%;
+}
+.week3{
+    position: absolute;
+    margin-top: 42%;
+    margin-left: -7%;
+    width: 30%;
+}
+.phase6{
+    position: absolute;
+    margin-top: 28%;
+    margin-left: -23%;
+    font-size: 14px;
+    font-weight: 700;
+    width: 25%;
+}
+.phase7{
+    position: absolute;
+    margin-top:56%;
+    margin-left: 1%;
+    font-size: 14px;
+    font-weight: 700;
+    width: 20%;
+}
+.seven{
+    position: absolute;
+    width: 29%;
+    margin-top:45%;
+    margin-left: -32%;
+}
+.eight{
+    position: absolute;
+    width: 29%;
+    margin-top:16%;
+    margin-left: -3%;
+}
+.squa5{
+    position: absolute;
+    margin-top:57.5%;
+    width: 20%;
+    margin-left: -34%;
+}
+.squ6{
+    position: absolute;
+    margin-top: 13%;
+    width: 20%;
+    margin-left: 8%;
+}
+
+.head9{
+   margin-left: 54%;
+    margin-top: -6%;
+    width: 130%;
+}
+.head10{
+    position: absolute;
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 84%;
+    text-align: left;
+}
+.head10 h2{
+    font-size: 24px;
+    margin-left: 20%;
+}
+.head10 p span{
+    position: absolute;
+    margin-top: 7%;
+    font-size: 10px;
+}
+.line9 {
+    margin-top:198%;
+    left:-2%;
+    width:70%;
+    margin-left: 18%;
+    height: 1px;
+    background-color:#FFCD07;
+    border: 1.5px solid #FFCD07
+}
+
+.container24{
+    background-color: #B5CFDF;
+    margin-top:8%;
+    width: 80%;
+    margin-left: 11%;
+    height:685px;
+    font-family: 'lato';
+}
+
+.deployment{
+    margin-top: 18%;
+    margin-left: -30%;
+    width: 36%;
+}
+.week4{
+    position: absolute;
+    margin-top: 42%;
+    margin-left: -6%;
+    width: 30%;
+}
+.phase8{
+    position: absolute;
+    margin-top: 27%;
+    margin-left: -27%;
+    font-size: 14px;
+    font-weight: 700;
+    width: 20%;
+}
+.phase9{
+    position: absolute;
+    margin-top: 53%;
+    margin-left:3%;
+    font-size: 14px;
+    font-weight: 700;
+    width: 20%;
+}
+.nine{
+    position: absolute;
+    width: 29%;
+    margin-top:45%;
+    margin-left: -32%;
+}
+.ten{
+    position: absolute;
+    width: 29%;
+    margin-top:16%;
+    margin-left: -3%;
+}
+.squa7{
+    position: absolute;
+    margin-top:57.5%;
+    width: 20%;
+    margin-left: -34%;
+}
+.squ8{
+    position: absolute;
+    margin-top: 13%;
+    width: 20%;
+    margin-left: 8%;
+}
+.head11{
+    width: 95%;
+    margin-left:54% ;
+    margin-top:-6%;
+}
+.head12{
+    position: absolute;
+    margin-top:84%;
+    width: 71%;
+    margin-left: 4%;
+    text-align: justify;
+}
+.head12 h2{
+    font-size: 25px;
+    margin-left: 6%;
+}
+.head12 p span{
+    position: absolute;
+    margin-top: 7%;
+    font-size: 10px;
+    text-align: left;
+}
+.line10 {
+    margin-top:206%;
+    left:-2%;
+    width:70%;
+    margin-left: 18%;
+    height: 1px;
+    background-color:#FFCD07;
+    border: 1.5px solid #FFCD07
+}
+
+.container25{
+    background-color: #B5CFDF;
+    margin-top:8%;
+    width: 80%;
+    margin-left: 11%;
+    height:665px;
+    font-family: 'lato';
+}
+.maintenance{
+    margin-top: 19%;
+    margin-left: -29%;
+    width: 40%;
+}
+.week5{
+    position: absolute;
+    margin-top: 42%;
+    margin-left: -7%;
+    width: 30%;
+}
+.phase10{
+    position: absolute;
+    margin-top: 28%;
+    margin-left: -23%;
+    font-size: 14px;
+    font-weight: 700;
+    width: 25%;
+}
+.phase11{
+    position: absolute;
+    margin-top:56%;
+    margin-left: 1%;
+    font-size: 14px;
+    font-weight: 700;
+    width: 20%;
+}
+.eleven{
+    position: absolute;
+    width: 29%;
+    margin-top:45%;
+    margin-left: -32%;
+}
+.twelve{
+    position: absolute;
+    width: 29%;
+    margin-top:16%;
+    margin-left: -3%;
+}
+.squa9{
+    position: absolute;
+    margin-top:57.5%;
+    width: 20%;
+    margin-left: -34%;
+}
+.squ10{
+    position: absolute;
+    margin-top: 13%;
+    width: 20%;
+    margin-left: 8%;
+}
+
+.head13{
+   margin-left: 54%;
+    margin-top: -6%;
+    width: 130%;
+}
+.head14{
+    position: absolute;
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 84%;
+    text-align: justify;
+}
+.head14 h2{
+    font-size: 25px;
+    margin-left: 2%;
+}
+.head14 p span{
+    position: absolute;
+    margin-top: 7%;
+    font-size: 10px;
+    text-align: left;
+}
+.line11 {
+    margin-top:200%;
+    left:-2%;
+    width:70%;
+    margin-left: 18%;
+    height: 1px;
+    background-color:#FFCD07;
+    border: 1.5px solid #FFCD07
+}
+}
+
+@media (min-width: 375px) and (max-width: 424px){
+
+    .container2{
+        background-color: #B5CFDF;
+        margin-top:8%;
+        width: 80%;
+        margin-left: 11%;
+        height:710px;
+        font-family: 'lato';
+    }
+    .head3{
+        margin-left: 8%;
+        margin-top: 10%;
+    }
+    .planning{
+        margin-top: 25%;
+        margin-left: 8%;
+        width: 40%;
+    }
+    .week{
+        position: absolute;
+        margin-top: 42%;
+        margin-left: -6%;
+        width: 30%;
+    }
+    .phase{
+        position: absolute;
+        margin-top: -21%;
+        margin-left: 9%;
+        font-size: 14px;
+        font-weight: 700;
+        width: 20%;
+    }
+    .phase1{
+        position: absolute;
+        margin-top: 4%;
+        margin-left: 38%;
+        font-size: 14px;
+        font-weight: 700;
+        width: 20%;
+    }
+    .one{
+        position: absolute;
+        width: 29%;
+        margin-top:45%;
+        margin-left: -32%;
+    }
+    .two{
+        position: absolute;
+        width: 29%;
+        margin-top:16%;
+        margin-left: -3%;
+    }
+    .squa{
+        position: absolute;
+        margin-top:57.5%;
+        width: 20%;
+        margin-left: -34%;
+    }
+    .squ{
+        position: absolute;
+        margin-top: 13%;
+        width: 20%;
+        margin-left: 8%;
+    }
+    .line6{
+        margin-top: 166%;
+        left:-2%;
+        width:90%;
+        margin-left: 5%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+    
+    .head4{
+        position: absolute;
+        margin-top: 40%;
+        width: 60%;
+        margin-left: 15%;
+        text-align: justify;
+    }
+    .head4 h2{
+        font-size: 26px;
+        margin-top: -10%;
+    
+    }
+    .head4 p span{
+        position: absolute;
+        margin-top: 8%;
+        margin-left: -18%;
+        text-align: left;
+        font-size: 11px;
+    }
+    
+    .container21{
+        background-color: #B5CFDF;
+        margin-top:8%;
+        width: 80%;
+        margin-left: 11%;
+        height:720px;
+        font-family: 'lato';
+    }
+    .Designing{
+        margin-top: 19%;
+        margin-left: -29%;
+        width: 40%;
+    }
+    .week1{
+        position: absolute;
+        margin-top: 42%;
+        margin-left: -7%;
+        width: 30%;
+    }
+    .phase2{
+        position: absolute;
+        margin-top: 28%;
+        margin-left: -25%;
+        font-size: 14px;
+        font-weight: 700;
+        width: 20%;
+    }
+    .phase3{
+        position: absolute;
+        margin-top:52%;
+        margin-left: 3%;
+        font-size: 14px;
+        font-weight: 700;
+        width: 20%;
+    }
+    .three{
+        position: absolute;
+        width: 29%;
+        margin-top:45%;
+        margin-left: -32%;
+    }
+    .four{
+        position: absolute;
+        width: 29%;
+        margin-top:16%;
+        margin-left: -3%;
+    }
+    .squa1{
+        position: absolute;
+        margin-top:57.5%;
+        width: 20%;
+        margin-left: -34%;
+    }
+    .squ2{
+        position: absolute;
+        margin-top: 13%;
+        width: 20%;
+        margin-left: 8%;
+    }
+    .line7{
+        margin-top: 184%;
+        left:-2%;
+        width:70%;
+        margin-left: 18%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+    
+    .head5{
+       margin-left: 54%;
+        margin-top: -6%;
+    }
+    
+    .head6{
+        position: absolute;
+        width: 65%;
+        margin-left: 11%;
+        margin-top:82%;
+        text-align: justify;
+    }
+    .head6 h2{
+        font-size: 26px;
+        margin-left: 7%;
+    }
+    .head6 p span{
+        position: absolute;
+        margin-top: 8%;
+        font-size: 11px;
+        margin-left: -10%;
+        text-align: left;
+    }
+    
+    .container22{
+        background-color: #B5CFDF;
+        margin-top:8%;
+        width: 80%;
+        margin-left: 11%;
+        height:750px;
+        font-family: 'lato';
+    }
+    .Development{
+        margin-top: 18%;
+        margin-left: -30%;
+        width: 36%;
+    }
+    .week2{
+        position: absolute;
+        margin-top: 42%;
+        margin-left: -6%;
+        width: 30%;
+    }
+    .phase4{
+        position: absolute;
+        margin-top: 27%;
+        margin-left: -27%;
+        font-size: 14px;
+        font-weight: 700;
+        width: 20%;
+    }
+    .phase5{
+        position: absolute;
+        margin-top: 53%;
+        margin-left:3%;
+        font-size: 14px;
+        font-weight: 700;
+        width: 20%;
+    }
+    .five{
+        position: absolute;
+        width: 29%;
+        margin-top:45%;
+        margin-left: -32%;
+    }
+    .six{
+        position: absolute;
+        width: 29%;
+        margin-top:16%;
+        margin-left: -3%;
+    }
+    .squa3{
+        position: absolute;
+        margin-top:57.5%;
+        width: 20%;
+        margin-left: -34%;
+    }
+    .squ4{
+        position: absolute;
+        margin-top: 13%;
+        width: 20%;
+        margin-left: 8%;
+    }
+    .head7{
+        width: 95%;
+        margin-left:54% ;
+        margin-top:-6%;
+    }
+    
+    .head8{
+        position: absolute;
+        margin-top:84%;
+        width: 71%;
+        margin-left: 4%;
+        text-align: justify;
+    }
+    .head8 h2{
+        font-size: 25px;
+        margin-left: 10%;
+    }
+    .head8 p span{
+        position: absolute;
+        margin-top: 7%;
+        font-size: 11px;
+        text-align: left;
+    }
+    .line8 {
+        margin-top:191%;
+        left:-2%;
+        width:70%;
+        margin-left: 18%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+    
+    .container23{
+        background-color: #B5CFDF;
+        margin-top:8%;
+        width: 80%;
+        margin-left: 11%;
+        height:710px;
+        font-family: 'lato';
+    }
+    .testing{
+        margin-top: 19%;
+        margin-left: -29%;
+        width: 40%;
+    }
+    .week3{
+        position: absolute;
+        margin-top: 42%;
+        margin-left: -7%;
+        width: 30%;
+    }
+    .phase6{
+        position: absolute;
+        margin-top: 28%;
+        margin-left: -23%;
+        font-size: 14px;
+        font-weight: 700;
+        width: 25%;
+    }
+    .phase7{
+        position: absolute;
+        margin-top:56%;
+        margin-left: 1%;
+        font-size: 14px;
+        font-weight: 700;
+        width: 20%;
+    }
+    .seven{
+        position: absolute;
+        width: 29%;
+        margin-top:45%;
+        margin-left: -32%;
+    }
+    .eight{
+        position: absolute;
+        width: 29%;
+        margin-top:16%;
+        margin-left: -3%;
+    }
+    .squa5{
+        position: absolute;
+        margin-top:57.5%;
+        width: 20%;
+        margin-left: -34%;
+    }
+    .squ6{
+        position: absolute;
+        margin-top: 13%;
+        width: 20%;
+        margin-left: 8%;
+    }
+    
+    .head9{
+       margin-left: 54%;
+        margin-top: -6%;
+        width: 130%;
+    }
+    .head10{
+        position: absolute;
+        width: 70%;
+        margin-left: 5%;
+        margin-top: 84%;
+        text-align: justify;
+    }
+    .head10 h2{
+        font-size: 26px;
+        margin-left: 20%;
+    }
+    .head10 p span{
+        position: absolute;
+        margin-top: 7%;
+        font-size: 11px;
+        text-align: left;
+    }
+    .line9 {
+        margin-top:183%;
+        left:-2%;
+        width:70%;
+        margin-left: 18%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+    
+    .container24{
+        background-color: #B5CFDF;
+        margin-top:8%;
+        width: 80%;
+        margin-left: 11%;
+        height:770px;
+        font-family: 'lato';
+    }
+    
+    .deployment{
+        margin-top: 18%;
+        margin-left: -30%;
+        width: 36%;
+    }
+    .week4{
+        position: absolute;
+        margin-top: 42%;
+        margin-left: -6%;
+        width: 30%;
+    }
+    .phase8{
+        position: absolute;
+        margin-top: 27%;
+        margin-left: -27%;
+        font-size: 14px;
+        font-weight: 700;
+        width: 20%;
+    }
+    .phase9{
+        position: absolute;
+        margin-top: 53%;
+        margin-left:3%;
+        font-size: 14px;
+        font-weight: 700;
+        width: 20%;
+    }
+    .nine{
+        position: absolute;
+        width: 29%;
+        margin-top:45%;
+        margin-left: -32%;
+    }
+    .ten{
+        position: absolute;
+        width: 29%;
+        margin-top:16%;
+        margin-left: -3%;
+    }
+    .squa7{
+        position: absolute;
+        margin-top:57.5%;
+        width: 20%;
+        margin-left: -34%;
+    }
+    .squ8{
+        position: absolute;
+        margin-top: 13%;
+        width: 20%;
+        margin-left: 8%;
+    }
+    .head11{
+        width: 95%;
+        margin-left:54% ;
+        margin-top:-6%;
+    }
+    .head12{
+        position: absolute;
+        margin-top:84%;
+        width: 71%;
+        margin-left: 4%;
+        text-align: justify;
+    }
+    .head12 h2{
+        font-size: 25px;
+        margin-left: 6%;
+    }
+    .head12 p span{
+        position: absolute;
+        margin-top: 7%;
+        font-size: 11px;
+        text-align: left;
+    }
+    .line10 {
+        margin-top:197%;
+        left:-2%;
+        width:70%;
+        margin-left: 18%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+    
+    .container25{
+        background-color: #B5CFDF;
+        margin-top:8%;
+        width: 80%;
+        margin-left: 11%;
+        height:740px;
+        font-family: 'lato';
+    }
+    .maintenance{
+        margin-top: 19%;
+        margin-left: -29%;
+        width: 40%;
+    }
+    .week5{
+        position: absolute;
+        margin-top: 42%;
+        margin-left: -7%;
+        width: 30%;
+    }
+    .phase10{
+        position: absolute;
+        margin-top: 28%;
+        margin-left: -23%;
+        font-size: 14px;
+        font-weight: 700;
+        width: 25%;
+    }
+    .phase11{
+        position: absolute;
+        margin-top:56%;
+        margin-left: 1%;
+        font-size: 14px;
+        font-weight: 700;
+        width: 20%;
+    }
+    .eleven{
+        position: absolute;
+        width: 29%;
+        margin-top:45%;
+        margin-left: -32%;
+    }
+    .twelve{
+        position: absolute;
+        width: 29%;
+        margin-top:16%;
+        margin-left: -3%;
+    }
+    .squa9{
+        position: absolute;
+        margin-top:57.5%;
+        width: 20%;
+        margin-left: -34%;
+    }
+    .squ10{
+        position: absolute;
+        margin-top: 13%;
+        width: 20%;
+        margin-left: 8%;
+    }
+    
+    .head13{
+       margin-left: 54%;
+        margin-top: -6%;
+        width: 130%;
+    }
+    .head14{
+        position: absolute;
+        width: 70%;
+        margin-left: 5%;
+        margin-top: 84%;
+        text-align: justify;
+    }
+    .head14 h2{
+        font-size: 25px;
+        margin-left: 2%;
+    }
+    .head14 p span{
+        position: absolute;
+        margin-top: 7%;
+        font-size: 11px;
+        text-align: left;
+    }
+    .line11 {
+        margin-top:188%;
+        left:-2%;
+        width:70%;
+        margin-left: 18%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+    }
+
+
+    @media (min-width: 425px) and (max-width: 767px){
+
+        .container2{
+            background-color: #B5CFDF;
+            margin-top:8%;
+            width: 80%;
+            margin-left: 11%;
+            height:730px;
+            font-family: 'lato';
+        }
+        .head3{
+            margin-left: 8%;
+            margin-top: 10%;
+        }
+        .planning{
+            margin-top: 25%;
+            margin-left: 8%;
+            width: 40%;
+        }
+        .week{
+            position: absolute;
+            margin-top: 42%;
+            margin-left: -6%;
+            width: 30%;
+        }
+        .phase{
+            position: absolute;
+            margin-top: -21%;
+            margin-left: 9%;
+            font-size: 14px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .phase1{
+            position: absolute;
+            margin-top: 4%;
+            margin-left: 38%;
+            font-size: 14px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .one{
+            position: absolute;
+            width: 29%;
+            margin-top:45%;
+            margin-left: -32%;
+        }
+        .two{
+            position: absolute;
+            width: 29%;
+            margin-top:16%;
+            margin-left: -3%;
+        }
+        .squa{
+            position: absolute;
+            margin-top:57.5%;
+            width: 20%;
+            margin-left: -34%;
+        }
+        .squ{
+            position: absolute;
+            margin-top: 13%;
+            width: 20%;
+            margin-left: 8%;
+        }
+        .line6{
+            margin-top: 145%;
+            left:-2%;
+            width:90%;
+            margin-left: 5%;
+            height: 1px;
+            background-color:#FFCD07;
+            border: 1.5px solid #FFCD07
+        }
+        
+        .head4{
+            position: absolute;
+            margin-top: 40%;
+            width: 60%;
+            margin-left: 15%;
+            text-align: justify;
+        }
+        .head4 h2{
+            font-size: 26px;
+            margin-top: -10%;
+        
+        }
+        .head4 p span{
+            position: absolute;
+            margin-top: 8%;
+            margin-left: -18%;
+            text-align: justify;
+            font-size: 11.5px;
+        }
+        
+        .container21{
+            background-color: #B5CFDF;
+            margin-top:8%;
+            width: 80%;
+            margin-left: 11%;
+            height:735px;
+            font-family: 'lato';
+        }
+        .Designing{
+            margin-top: 19%;
+            margin-left: -29%;
+            width: 40%;
+        }
+        .week1{
+            position: absolute;
+            margin-top: 42%;
+            margin-left: -7%;
+            width: 30%;
+        }
+        .phase2{
+            position: absolute;
+            margin-top: 28%;
+            margin-left: -25%;
+            font-size: 14px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .phase3{
+            position: absolute;
+            margin-top:52%;
+            margin-left: 3%;
+            font-size: 14px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .three{
+            position: absolute;
+            width: 29%;
+            margin-top:45%;
+            margin-left: -32%;
+        }
+        .four{
+            position: absolute;
+            width: 29%;
+            margin-top:16%;
+            margin-left: -3%;
+        }
+        .squa1{
+            position: absolute;
+            margin-top:57.5%;
+            width: 20%;
+            margin-left: -34%;
+        }
+        .squ2{
+            position: absolute;
+            margin-top: 13%;
+            width: 20%;
+            margin-left: 8%;
+        }
+        .line7{
+            margin-top: 164%;
+            left:-2%;
+            width:70%;
+            margin-left: 18%;
+            height: 1px;
+            background-color:#FFCD07;
+            border: 1.5px solid #FFCD07
+        }
+        
+        .head5{
+           margin-left: 54%;
+            margin-top: -6%;
+        }
+        
+        .head6{
+            position: absolute;
+            width: 65%;
+            margin-left: 11%;
+            margin-top:82%;
+            text-align: justify;
+        }
+        .head6 h2{
+            font-size: 26px;
+            margin-left: 7%;
+        }
+        .head6 p span{
+            position: absolute;
+            margin-top: 8%;
+            font-size: 11.5px;
+            margin-left: -10%;
+            text-align: left;
+        }
+        
+        .container22{
+            background-color: #B5CFDF;
+            margin-top:8%;
+            width: 80%;
+            margin-left: 11%;
+            height:775px;
+            font-family: 'lato';
+        }
+        .Development{
+            margin-top: 18%;
+            margin-left: -30%;
+            width: 36%;
+        }
+        .week2{
+            position: absolute;
+            margin-top: 42%;
+            margin-left: -6%;
+            width: 30%;
+        }
+        .phase4{
+            position: absolute;
+            margin-top: 27%;
+            margin-left: -27%;
+            font-size: 14px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .phase5{
+            position: absolute;
+            margin-top: 53%;
+            margin-left:3%;
+            font-size: 14px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .five{
+            position: absolute;
+            width: 29%;
+            margin-top:45%;
+            margin-left: -32%;
+        }
+        .six{
+            position: absolute;
+            width: 29%;
+            margin-top:16%;
+            margin-left: -3%;
+        }
+        .squa3{
+            position: absolute;
+            margin-top:57.5%;
+            width: 20%;
+            margin-left: -34%;
+        }
+        .squ4{
+            position: absolute;
+            margin-top: 13%;
+            width: 20%;
+            margin-left: 8%;
+        }
+        .head7{
+            width: 95%;
+            margin-left:54% ;
+            margin-top:-6%;
+        }
+        
+        .head8{
+            position: absolute;
+            margin-top:84%;
+            width: 71%;
+            margin-left: 4%;
+            text-align: justify;
+        }
+        .head8 h2{
+            font-size: 25px;
+            margin-left: 10%;
+        }
+        .head8 p span{
+            position: absolute;
+            margin-top: 7%;
+            font-size: 11.5px;
+            text-align: left;
+        }
+        .line8 {
+            margin-top:173%;
+            left:-2%;
+            width:70%;
+            margin-left: 18%;
+            height: 1px;
+            background-color:#FFCD07;
+            border: 1.5px solid #FFCD07
+        }
+        
+        .container23{
+            background-color: #B5CFDF;
+            margin-top:8%;
+            width: 80%;
+            margin-left: 11%;
+            height:738px;
+            font-family: 'lato';
+        }
+        .testing{
+            margin-top: 19%;
+            margin-left: -29%;
+            width: 40%;
+        }
+        .week3{
+            position: absolute;
+            margin-top: 42%;
+            margin-left: -7%;
+            width: 30%;
+        }
+        .phase6{
+            position: absolute;
+            margin-top: 28%;
+            margin-left: -23%;
+            font-size: 14px;
+            font-weight: 700;
+            width: 25%;
+        }
+        .phase7{
+            position: absolute;
+            margin-top:56%;
+            margin-left: 1%;
+            font-size: 14px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .seven{
+            position: absolute;
+            width: 29%;
+            margin-top:45%;
+            margin-left: -32%;
+        }
+        .eight{
+            position: absolute;
+            width: 29%;
+            margin-top:16%;
+            margin-left: -3%;
+        }
+        .squa5{
+            position: absolute;
+            margin-top:57.5%;
+            width: 20%;
+            margin-left: -34%;
+        }
+        .squ6{
+            position: absolute;
+            margin-top: 13%;
+            width: 20%;
+            margin-left: 8%;
+        }
+        
+        .head9{
+           margin-left: 54%;
+            margin-top: -6%;
+            width: 130%;
+        }
+        .head10{
+            position: absolute;
+            width: 70%;
+            margin-left: 5%;
+            margin-top: 84%;
+            text-align: justify;
+        }
+        .head10 h2{
+            font-size: 26px;
+            margin-left: 20%;
+        }
+        .head10 p span{
+            position: absolute;
+            margin-top: 7%;
+            font-size: 11.5px;
+            text-align: left;
+        }
+        .line9 {
+            margin-top:166%;
+            left:-2%;
+            width:70%;
+            margin-left: 18%;
+            height: 1px;
+            background-color:#FFCD07;
+            border: 1.5px solid #FFCD07
+        }
+        
+        .container24{
+            background-color: #B5CFDF;
+            margin-top:8%;
+            width: 80%;
+            margin-left: 11%;
+            height:776px;
+            font-family: 'lato';
+        }
+        
+        .deployment{
+            margin-top: 18%;
+            margin-left: -30%;
+            width: 36%;
+        }
+        .week4{
+            position: absolute;
+            margin-top: 42%;
+            margin-left: -6%;
+            width: 30%;
+        }
+        .phase8{
+            position: absolute;
+            margin-top: 27%;
+            margin-left: -27%;
+            font-size: 14px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .phase9{
+            position: absolute;
+            margin-top: 53%;
+            margin-left:3%;
+            font-size: 14px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .nine{
+            position: absolute;
+            width: 29%;
+            margin-top:45%;
+            margin-left: -32%;
+        }
+        .ten{
+            position: absolute;
+            width: 29%;
+            margin-top:16%;
+            margin-left: -3%;
+        }
+        .squa7{
+            position: absolute;
+            margin-top:57.5%;
+            width: 20%;
+            margin-left: -34%;
+        }
+        .squ8{
+            position: absolute;
+            margin-top: 13%;
+            width: 20%;
+            margin-left: 8%;
+        }
+        .head11{
+            width: 95%;
+            margin-left:54% ;
+            margin-top:-6%;
+        }
+        .head12{
+            position: absolute;
+            margin-top:84%;
+            width: 71%;
+            margin-left: 4%;
+            text-align: justify;
+        }
+        .head12 h2{
+            font-size: 25px;
+            margin-left: 17%;
+        }
+        .head12 p span{
+            position: absolute;
+            margin-top: 7%;
+            font-size: 11.5px;
+            text-align: left;
+        }
+        .line10 {
+            margin-top:174%;
+            left:-2%;
+            width:70%;
+            margin-left: 18%;
+            height: 1px;
+            background-color:#FFCD07;
+            border: 1.5px solid #FFCD07
+        }
+        
+        .container25{
+            background-color: #B5CFDF;
+            margin-top:8%;
+            width: 80%;
+            margin-left: 11%;
+            height:760px;
+            font-family: 'lato';
+        }
+        .maintenance{
+            margin-top: 19%;
+            margin-left: -29%;
+            width: 40%;
+        }
+        .week5{
+            position: absolute;
+            margin-top: 42%;
+            margin-left: -7%;
+            width: 30%;
+        }
+        .phase10{
+            position: absolute;
+            margin-top: 28%;
+            margin-left: -23%;
+            font-size: 14px;
+            font-weight: 700;
+            width: 25%;
+        }
+        .phase11{
+            position: absolute;
+            margin-top:56%;
+            margin-left: 1%;
+            font-size: 14px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .eleven{
+            position: absolute;
+            width: 29%;
+            margin-top:45%;
+            margin-left: -32%;
+        }
+        .twelve{
+            position: absolute;
+            width: 29%;
+            margin-top:16%;
+            margin-left: -3%;
+        }
+        .squa9{
+            position: absolute;
+            margin-top:57.5%;
+            width: 20%;
+            margin-left: -34%;
+        }
+        .squ10{
+            position: absolute;
+            margin-top: 13%;
+            width: 20%;
+            margin-left: 8%;
+        }
+        
+        .head13{
+           margin-left: 54%;
+            margin-top: -6%;
+            width: 130%;
+        }
+        .head14{
+            position: absolute;
+            width: 70%;
+            margin-left: 5%;
+            margin-top: 84%;
+            text-align: justify;
+        }
+        .head14 h2{
+            font-size: 25px;
+            margin-left: 17%;
+        }
+        .head14 p span{
+            position: absolute;
+            margin-top: 7%;
+            font-size: 11.5px;
+            text-align: left;
+        }
+        .line11 {
+            margin-top:170%;
+            left:-2%;
+            width:70%;
+            margin-left: 18%;
+            height: 1px;
+            background-color:#FFCD07;
+            border: 1.5px solid #FFCD07
+        }
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px){
+        .container2{
+            background-color: #B5CFDF;
+            margin-top: 3%;
+            width: 80%;
+            margin-left: 11%;
+            height: 910px;
+            font-family: 'lato';
+        }
+        
+        
+        .head3{
+            margin-left: 8%;
+            margin-top: 5%;
+        }
+        .planning{
+            margin-top: 19%;
+            margin-left: 22%;
+            width: 28%;
+        }
+        .week{
+            position: absolute;
+            margin-top: 30%;
+            margin-left: -5%;
+            width: 21%;
+        }
+        .phase{
+            position: absolute;
+            margin-top: -15%;
+            margin-left: 21%;
+            font-size: 20px;
+            font-weight: 700;
+            width: 10%;
+        }
+        .phase1{
+            position: absolute;
+            margin-top: 4%;
+            margin-left: 37%;
+            font-size: 20px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .one{
+            position: absolute;
+            width: 21%;
+            margin-top:32%;
+            margin-left: -23%;
+        }
+        .two{
+            position: absolute;
+            width: 21%;
+            margin-top:11%;
+            margin-left: -3%;
+        }
+        .squa{
+            position: absolute;
+            margin-top:40.5%;
+            width: 15%;
+            margin-left: -24.5%;
+        }
+        .squ{
+            position: absolute;
+            margin-top: 9%;
+            width: 15%;
+            margin-left: 4.5%;
+        }
+        
+        .head4{
+            position: absolute;
+            margin-top: 40%;
+            width: 60%;
+            margin-left: 15%;
+            text-align: justify;
+        }
+        .head4 h2{
+            font-size: 33px;
+            margin-top: -27%;
+            margin-left: 16%;
+    
+        }
+        .head4 p span{
+            position: absolute;
+            margin-top: 8%;
+            margin-left: -18%;
+            text-align: left;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .line6{
+            margin-top: 96%;
+            left:-2%;
+            width:90%;
+            margin-left: 5%;
+            height: 1px;
+            background-color:#FFCD07;
+            border: 1.5px solid #FFCD07
+        }
+        
+        .head5{
+            margin-left: 50%;
+            margin-top: -5%;
+        }
+
+        .container21{
+            background-color: #B5CFDF;
+            margin-top: 10%;
+            width: 80%;
+            margin-left: 11%;
+            height: 935px;
+            font-family: 'lato';
+        }
+        
+        .Designing{
+            margin-top: 13%;
+            margin-left: -21%;
+            width: 23%;
+        }
+        .week1{
+            position: absolute;
+            margin-top: 30%;
+            margin-left: -5%;
+            width: 21%;
+        }
+        .phase2{
+            position: absolute;
+            margin-top: 20%;
+            margin-left: -16%;
+            font-size: 20px;
+            font-weight: 700;
+            width: 10%;
+        }
+        .phase3{
+            position: absolute;
+            margin-top: 39%;
+            margin-left: -1%;
+            font-size: 20px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .three{
+            position: absolute;
+            width: 21%;
+            margin-top:32%;
+            margin-left: -23%;
+        }
+        .four{
+            position: absolute;
+            width: 21%;
+            margin-top:11%;
+            margin-left: -3%;
+        }
+        .squa1{
+            position: absolute;
+            margin-top:40.5%;
+            width: 15%;
+            margin-left: -24.5%;
+        }
+        .squ2{
+            position: absolute;
+            margin-top: 9%;
+            width: 15%;
+            margin-left: 4.5%;
+        }
+        
+        .head6{
+            position: absolute;
+            margin-top: 75%;
+            width: 60%;
+            margin-left: 15%;
+            text-align: justify;
+        }
+        .head6 h2{
+            font-size: 33px;
+            margin-top: -27%;
+            margin-left: 16%;
+    
+        }
+        .head6 p span{
+            position: absolute;
+            margin-top: 8%;
+            margin-left: -18%;
+            text-align: left;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .line7{
+            margin-top: 115%;
+            left:-2%;
+            width:73%;
+            margin-left: 16.5%;
+            height: 1px;
+            background-color:#FFCD07;
+            border: 1.5px solid #FFCD07
+        }
+        
+        
+        .head7{
+            margin-left: 50%;
+            margin-top: -5%;
+        }
+
+        .container22{
+            background-color: #B5CFDF;
+            margin-top: 10%;
+            width: 80%;
+            margin-left: 11%;
+            height: 940px;
+            font-family: 'lato';
+        }
+        .Development{
+            margin-top: 13%;
+            margin-left: -21%;
+            width: 23%;
+        }
+        .week2{
+            position: absolute;
+            margin-top: 30%;
+            margin-left: -5%;
+            width: 21%;
+        }
+        .phase4{
+            position: absolute;
+            margin-top: 20%;
+            margin-left: -19%;
+            font-size: 20px;
+            font-weight: 700;
+            width: 10%;
+        }
+        .phase5{
+            position: absolute;
+            margin-top: 39%;
+            margin-left: -1%;
+            font-size: 20px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .five{
+            position: absolute;
+            width: 21%;
+            margin-top:32%;
+            margin-left: -23%;
+        }
+        .six{
+            position: absolute;
+            width: 21%;
+            margin-top:11%;
+            margin-left: -3%;
+        }
+        .squa3{
+            position: absolute;
+            margin-top:40.5%;
+            width: 15%;
+            margin-left: -24.5%;
+        }
+        .squ4{
+            position: absolute;
+            margin-top: 9%;
+            width: 15%;
+            margin-left: 4.5%;
+        }
+        
+        .head8{
+            position: absolute;
+            margin-top: 75%;
+            width: 60%;
+            margin-left: 15%;
+            text-align: justify;
+        }
+        .head8 h2{
+            font-size: 33px;
+            margin-top: -27%;
+            margin-left: 9%;
+    
+        }
+        .head8 p span{
+            position: absolute;
+            margin-top: 8%;
+            margin-left: -18%;
+            text-align: left;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .line8{
+            margin-top: 115%;
+            left:-2%;
+            width:73%;
+            margin-left: 16.5%;
+            height: 1px;
+            background-color:#FFCD07;
+            border: 1.5px solid #FFCD07
+        }
+        .head9{
+            margin-left: 50%;
+            margin-top: -5%;
+        }
+
+        .container23{
+            background-color: #B5CFDF;
+            margin-top: 10%;
+            width: 80%;
+            margin-left: 11%;
+            height: 915px;
+            font-family: 'lato';
+        }
+        .testing{
+            margin-top: 13%;
+            margin-left: -21%;
+            width: 23%;
+        }
+        .week3{
+            position: absolute;
+            margin-top: 30%;
+            margin-left: -5%;
+            width: 21%;
+        }
+        .phase6{
+            position: absolute;
+            margin-top: 20%;
+            margin-left: -16%;
+            font-size: 20px;
+            font-weight: 700;
+            width: 10%;
+        }
+        .phase7{
+            position: absolute;
+            margin-top: 39%;
+            margin-left: -1%;
+            font-size: 20px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .seven{
+            position: absolute;
+            width: 21%;
+            margin-top:32%;
+            margin-left: -23%;
+        }
+        .eight{
+            position: absolute;
+            width: 21%;
+            margin-top:11%;
+            margin-left: -3%;
+        }
+        .squa5{
+            position: absolute;
+            margin-top:40.5%;
+            width: 15%;
+            margin-left: -24.5%;
+        }
+        .squ6{
+            position: absolute;
+            margin-top: 9%;
+            width: 15%;
+            margin-left: 4.5%;
+        }
+        
+        .head10{
+            position: absolute;
+            margin-top: 75%;
+            width: 60%;
+            margin-left: 15%;
+            text-align: justify;
+        }
+        .head10 h2{
+            font-size: 33px;
+            margin-top: -27%;
+            margin-left: 16%;
+    
+        }
+        .head10 p span{
+            position: absolute;
+            margin-top: 8%;
+            margin-left: -18%;
+            text-align: left;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .line9{
+            margin-top: 112%;
+            left:-2%;
+            width:73%;
+            margin-left: 16.5%;
+            height: 1px;
+            background-color:#FFCD07;
+            border: 1.5px solid #FFCD07
+        }
+        
+        .head11{
+            margin-left: 50%;
+            margin-top: -5%;
+        }
+
+        .container24{
+            background-color: #B5CFDF;
+            margin-top: 10%;
+            width: 80%;
+            margin-left: 11%;
+            height: 960px;
+            font-family: 'lato';
+        }
+        .deployment{
+            margin-top: 13%;
+            margin-left: -21%;
+            width: 23%;
+        }
+        .week4{
+            position: absolute;
+            margin-top: 30%;
+            margin-left: -5%;
+            width: 21%;
+        }
+        .phase8{
+            position: absolute;
+            margin-top: 20%;
+            margin-left: -20%;
+            font-size: 20px;
+            font-weight: 700;
+            width: 10%;
+        }
+        .phase9{
+            position: absolute;
+            margin-top: 39%;
+            margin-left: 1%;
+            font-size: 20px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .nine{
+            position: absolute;
+            width: 21%;
+            margin-top:32%;
+            margin-left: -23%;
+        }
+        .ten{
+            position: absolute;
+            width: 21%;
+            margin-top:11%;
+            margin-left: -3%;
+        }
+        .squa7{
+            position: absolute;
+            margin-top:40.5%;
+            width: 15%;
+            margin-left: -24.5%;
+        }
+        .squ8{
+            position: absolute;
+            margin-top: 9%;
+            width: 15%;
+            margin-left: 4.5%;
+        }
+        
+        .head12{
+            position: absolute;
+            margin-top: 75%;
+            width: 60%;
+            margin-left: 15%;
+            text-align: justify;
+        }
+        .head12 h2{
+            font-size: 33px;
+            margin-top: -27%;
+            margin-left: 10%;
+    
+        }
+        .head12 p span{
+            position: absolute;
+            margin-top: 8%;
+            margin-left: -18%;
+            text-align: left;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .line10{
+            margin-top: 119%;
+            left:-2%;
+            width:73%;
+            margin-left: 16.5%;
+            height: 1px;
+            background-color:#FFCD07;
+            border: 1.5px solid #FFCD07
+        }
+        .head13{
+            margin-left: 50%;
+            margin-top: -5%;
+        }
+
+        .container25{
+            background-color: #B5CFDF;
+            margin-top: 10%;
+            width: 80%;
+            margin-left: 11%;
+            height: 920px;
+            font-family: 'lato';
+        }
+        .maintenance{
+            margin-top: 13%;
+            margin-left: -21%;
+            width: 23%;
+        }
+        .week5{
+            position: absolute;
+            margin-top: 30%;
+            margin-left: -5%;
+            width: 21%;
+        }
+        .phase10{
+            position: absolute;
+            margin-top: 20%;
+            margin-left: -20%;
+            font-size: 19px;
+            font-weight: 700;
+            width: 10%;
+        }
+        .phase11{
+            position: absolute;
+            margin-top: 39%;
+            margin-left: 2%;
+            font-size: 20px;
+            font-weight: 700;
+            width: 20%;
+        }
+        .eleven{
+            position: absolute;
+            width: 21%;
+            margin-top:32%;
+            margin-left: -23%;
+        }
+        .twelve{
+            position: absolute;
+            width: 21%;
+            margin-top:11%;
+            margin-left: -3%;
+        }
+        .squa9{
+            position: absolute;
+            margin-top:40.5%;
+            width: 15%;
+            margin-left: -24.5%;
+        }
+        .squ10{
+            position: absolute;
+            margin-top: 9%;
+            width: 15%;
+            margin-left: 4.5%;
+        }
+        
+        .head14{
+            position: absolute;
+            margin-top: 75%;
+            width: 60%;
+            margin-left: 15%;
+            text-align: justify;
+        }
+        .head14 h2{
+            font-size: 33px;
+            margin-top: -27%;
+            margin-left: 12%;
+    
+        }
+        .head14 p span{
+            position: absolute;
+            margin-top: 8%;
+            margin-left: -18%;
+            text-align: left;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .line11{
+            margin-top: 113%;
+            left:-2%;
+            width:73%;
+            margin-left: 16.5%;
+            height: 1px;
+            background-color:#FFCD07;
+            border: 1.5px solid #FFCD07
+        }
+    }
+
+
+    @media (min-width: 1024px) and (max-width: 1350px){
+
+    .container2{
+        background-color: #B5CFDF;
+        margin-top: 3%;
+        width: 80%;
+        height: 100%;
+        margin-left: 11%;
+        height: 390px;
+    }
+    
+    
+    .planning{
+        margin-top: 6%;
+        margin-left: 8%;
+        width: 15%;
+    }
+    .week{
+        position: absolute;
+        margin-top: 14%;
+        margin-left: -3%;
+        width: 11.5%;
+    }
+    .phase{
+        position: absolute;
+        margin-top: -9%;
+        margin-left: 8%;
+        font-size: 18px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .phase1{
+        position: absolute;
+        margin-top: 1.5%;
+        margin-left: 17.5%;
+        font-size: 17px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .one{
+        position: absolute;
+        width: 11.5%;
+        margin-top:15%;
+        margin-left: -13%;
+    }
+    .two{
+        position: absolute;
+        width: 11.5%;
+        margin-top:3.8%;
+        margin-left: -1.8%;
+    }
+    .squa{
+        position: absolute;
+        margin-top: 19.8%;
+        width: 8%;
+        margin-left: -13.8%;
+    }
+    .squ{
+        position: absolute;
+        margin-top: 3%;
+        width: 8%;
+        margin-left: 2.4%;
+    }
+    .line6 {
+        margin-top: 21%;
+        left:-2%;
+        width:90%;
+        margin-left: 5%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+    
+    
+    .head4{
+        position: absolute;
+        margin-top: -13%;
+        width: 40%;
+        margin-left: 34%;
+        text-align: justify;
+    }
+    .head4 h2{
+        font-size: 25px;
+    }
+    .head4 p span{
+        position: absolute;
+        margin-top: 4%;
+        font-size: 13PX;
+    }
+
+    .container21{
+        background-color: #B5CFDF;
+        margin-top: 3%;
+        width: 80%;
+        height: 100%;
+        margin-left: 11%;
+        height: 400px;
+    }
+    
+    .Designing{
+        position: absolute;
+        margin-top: 5%;
+        margin-left: -12%;
+        width: 11.5%;
+    }
+    .week1{
+        position: absolute;
+        margin-top: 14%;
+        margin-left: -3%;
+        width: 11.5%;
+    }
+    .phase2{
+        position: absolute;
+        margin-top: 8%;
+        margin-left: -10%;
+        font-size: 18px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .phase3{
+        position: absolute;
+        margin-top: 19%;
+        margin-left: -1%;
+        font-size: 16px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .three{
+        position: absolute;
+        width: 11.5%;
+        margin-top:15%;
+        margin-left: -13%;
+    }
+    .four{
+        position: absolute;
+        width: 11.5%;
+        margin-top:3.8%;
+        margin-left: -1.8%;
+    }
+    .squa1{
+        position: absolute;
+        margin-top: 19.8%;
+        width: 8%;
+        margin-left: -13.8%;
+    }
+    .squ2{
+        position: absolute;
+        margin-top: 3%;
+        width: 8%;
+        margin-left: 2.4%;
+    }
+    .head5{
+       margin-left: 81%;
+        margin-top: 0%;
+    }
+    
+    .head6{
+        position: absolute;
+        width: 40%;
+        margin-left: 6%;
+        margin-top: 4%;
+        text-align: justify;
+    }
+    .head6 h2{
+        font-size: 25px;
+    }
+    .head6 p span{
+        position: absolute;
+        margin-top: 4%;
+        font-size: 13px;
+    }
+    .line7 {
+        margin-top: 35%;
+        left:10%;
+        width:72%;
+        margin-left: 5%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+
+    .container22{
+        background-color: #B5CFDF;
+        margin-top: 3%;
+        width: 80%;
+        height: 100%;
+        margin-left: 11%;
+        height: 400px;
+    }
+    
+    .Development{
+        position: absolute;
+        margin-top: 5%;
+        margin-left: -12%;
+        width: 11.5%;
+    }
+    .week2{
+        position: absolute;
+        margin-top: 14%;
+        margin-left: -3%;
+        width: 11.5%;
+    }
+    .phase4{
+        position: absolute;
+        margin-top: 8%;
+        margin-left: -11%;
+        font-size: 16px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .phase5{
+        position: absolute;
+        margin-top: 19%;
+        margin-left: -0.8%;
+        font-size: 17px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .five{
+        position: absolute;
+        width: 11.5%;
+        margin-top:15%;
+        margin-left: -13%;
+    }
+    .six{
+        position: absolute;
+        width: 11.5%;
+        margin-top:3.8%;
+        margin-left: -1.8%;
+    }
+    .squa3{
+        position: absolute;
+        margin-top: 19.8%;
+        width: 8%;
+        margin-left: -13.8%;
+    }
+    .squ4{
+        position: absolute;
+        margin-top: 3%;
+        width: 8%;
+        margin-left: 2.4%;
+    }
+    .head7{
+        width: 95%;
+        margin-left:23.5% ;
+        margin-top:2%;
+    }
+    
+    .head8{
+        position: absolute;
+        margin-top:2.5%;
+        width: 40%;
+        margin-left: 35%;
+        text-align: justify;
+    }
+    .head8 h2{
+        font-size: 25px;
+    }
+    .head8 p span{
+        position: absolute;
+        margin-top: 4%;
+        font-size: 13px;
+    }
+    .line8 {
+        margin-top: 35%;
+        left:10%;
+        width:72%;
+        margin-left: 5%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+
+    
+    .container23{
+        background-color: #B5CFDF;
+        margin-top: 3%;
+        width: 80%;
+        height: 100%;
+        margin-left: 11%;
+        height: 400px;
+    }
+    .testing{
+        position: absolute;
+        margin-top: 5%;
+        margin-left: -12%;
+        width: 11.5%;
+    }
+    .week3{
+        position: absolute;
+        margin-top: 14%;
+        margin-left: -3%;
+        width: 11.5%;
+    }
+    .phase6{
+        position: absolute;
+        margin-top: 8%;
+        margin-left: -10%;
+        font-size: 18px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .phase7{
+        position: absolute;
+        margin-top: 19%;
+        margin-left: -0.5%;
+        font-size: 17px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .seven{
+        position: absolute;
+        width: 11.5%;
+        margin-top:15%;
+        margin-left: -13%;
+    }
+    .eight{
+        position: absolute;
+        width: 11.5%;
+        margin-top:3.8%;
+        margin-left: -1.8%;
+    }
+    .squa5{
+        position: absolute;
+        margin-top: 19.8%;
+        width: 8%;
+        margin-left: -13.8%;
+    }
+    .squ6{
+        position: absolute;
+        margin-top: 3%;
+        width: 8%;
+        margin-left: 2.4%;
+    }
+    .head9{
+       margin-left: 81%;
+        margin-top: 0%;
+        width: 130%;
+    }
+    .head10{
+        position: absolute;
+        width: 40%;
+        margin-left: 6%;
+        margin-top: 4%;
+        text-align: justify;
+    }
+    .head10 h2{
+        font-size: 25px;
+    }
+    .head10 p span{
+        position: absolute;
+        margin-top: 4%;
+        font-size: 13px;
+    }
+    .line9 {
+        margin-top: 35%;
+        left:10%;
+        width:72%;
+        margin-left: 5%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+
+    
+    .container24{
+        background-color: #B5CFDF;
+        margin-top: 3%;
+        width: 80%;
+        margin-left: 11%;
+        height: 400px;
+    }
+    .deployment{
+        position: absolute;
+        margin-top: 5%;
+        margin-left: -12%;
+        width: 11.5%;
+    }
+    .week4{
+        position: absolute;
+        margin-top: 14%;
+        margin-left: -3%;
+        width: 11.5%;
+    }
+    .phase8{
+        position: absolute;
+        margin-top: 8.5%;
+        margin-left: -11%;
+        font-size: 15px;
+        font-weight: 700;
+        width:5%;
+    }
+    .phase9{
+        position: absolute;
+        margin-top: 19%;
+        margin-left: 0%;
+        font-size: 18px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .nine{
+        position: absolute;
+        width: 11.5%;
+        margin-top:15%;
+        margin-left: -13%;
+    }
+    .ten{
+        position: absolute;
+        width: 11.5%;
+        margin-top:3.8%;
+        margin-left: -1.8%;
+    }
+    .squa7{
+        position: absolute;
+        margin-top: 19.8%;
+        width: 8%;
+        margin-left: -13.8%;
+    }
+    .squ8{
+        position: absolute;
+        margin-top: 3%;
+        width: 8%;
+        margin-left: 2.4%;
+    }
+    .head11{
+        width: 95%;
+        margin-left:23.5% ;
+        margin-top: 2%;
+    }
+    .head12{
+        position: absolute;
+        margin-top:2%;
+        width: 40%;
+        margin-left: 35%;
+        text-align: justify;
+    }
+    .head12 h2{
+        font-size: 25px;
+    }
+    .head12 p span{
+        position: absolute;
+        margin-top: 4%;
+        font-size: 13px;
+    }
+    .line10 {
+        margin-top: 35%;
+        left:10%;
+        width:72%;
+        margin-left: 5%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+
+    
+    .container25{
+        background-color: #B5CFDF;
+        margin-top: 3%;
+        width: 80%;
+        margin-left: 11%;
+        height: 390px;
+    }
+    .maintenance{
+        position: absolute;
+        margin-top: 5%;
+        margin-left: -12%;
+        width: 11.5%;
+    }
+    .week5{
+        position: absolute;
+        margin-top: 14%;
+        margin-left: -3%;
+        width: 11.5%;
+    }
+    .phase10{
+        position: absolute;
+        margin-top: 8%;
+        margin-left: -11.2%;
+        font-size: 15px;
+        font-weight: 700;
+        width: 1%;
+    }
+    .phase11{
+        position: absolute;
+        margin-top: 19%;
+        margin-left: -1%;
+        font-size: 20px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .eleven{
+        position: absolute;
+        width: 11.5%;
+        margin-top:15%;
+        margin-left: -13%;
+    }
+    .twelve{
+        position: absolute;
+        width: 11.5%;
+        margin-top:3.8%;
+        margin-left: -1.8%;
+    }
+    .squa9{
+        position: absolute;
+        margin-top: 19.8%;
+        width: 8%;
+        margin-left: -13.8%;
+    }
+    .squ10{
+        position: absolute;
+        margin-top: 3%;
+        width: 8%;
+        margin-left: 2.4%;
+    }
+    .head13{
+        margin-left: 81%;
+        margin-top: 1%;
+        width: 100%;
+    }
+    .head14{
+        position: absolute;
+        width: 40%;
+        margin-left: 6%;
+        margin-top: 3%;
+        text-align: justify;
+    }
+    .head14 h2{
+        font-size: 25px;
+    }
+    .head14 p span{
+        position: absolute;
+        margin-top: 4%;
+        font-size: 13px;
+        
+    }
+    .line11 {
+        margin-top: 33%;
+        left:10%;
+        width:72%;
+        margin-left: 5%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+}
+
+@media (min-width: 1351px) and (max-width: 1440px){
+
+    .container2{
+        background-color: #B5CFDF;
+        margin-top: 3%;
+        width: 80%;
+        margin-left: 11%;
+        height: 490px;
+    }
+    
+    
+    .planning{
+        margin-top: 6%;
+        margin-left: 8%;
+        width: 15%;
+    }
+    .week{
+        position: absolute;
+        margin-top: 14%;
+        margin-left: -3%;
+        width: 11.5%;
+    }
+    .phase{
+        position: absolute;
+        margin-top: -9%;
+        margin-left: 8%;
+        font-size: 18px;
+        font-weight: 700;
+        width: 8%;
+    }
+    .phase1{
+        position: absolute;
+        margin-top: 1.5%;
+        margin-left: 18%;
+        font-size: 17px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .one{
+        position: absolute;
+        width: 11.5%;
+        margin-top:15%;
+        margin-left: -13%;
+    }
+    .two{
+        position: absolute;
+        width: 11.5%;
+        margin-top:3.8%;
+        margin-left: -1.8%;
+    }
+    .squa{
+        position: absolute;
+        margin-top: 19.8%;
+        width: 8%;
+        margin-left: -13.8%;
+    }
+    .squ{
+        position: absolute;
+        margin-top: 3%;
+        width: 8%;
+        margin-left: 2.4%;
+    }
+    .line6 {
+        margin-top: 19%;
+        left:-2%;
+        width:90%;
+        margin-left: 5%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+    
+    
+    .head4{
+        position: absolute;
+        margin-top: -13%;
+        width: 40%;
+        margin-left: 34%;
+        text-align: justify;
+    }
+    .head4 h2{
+        font-size: 37px;
+    }
+    .head4 p span{
+        position: absolute;
+        margin-top: 4%;
+        font-size: 16.9PX;
+    }
+
+    .container21{
+        background-color: #B5CFDF;
+        margin-top: 3%;
+        width: 80%;
+        height: 100%;
+        margin-left: 11%;
+        height: 490px;
+    }
+    
+    .Designing{
+        position: absolute;
+        margin-top: 5%;
+        margin-left: -12%;
+        width: 11.5%;
+    }
+    .week1{
+        position: absolute;
+        margin-top: 14%;
+        margin-left: -3%;
+        width: 11.5%;
+    }
+    .phase2{
+        position: absolute;
+        margin-top: 8%;
+        margin-left: -10%;
+        font-size: 18px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .phase3{
+        position: absolute;
+        margin-top: 19%;
+        margin-left: 0%;
+        font-size: 16px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .three{
+        position: absolute;
+        width: 11.5%;
+        margin-top:15%;
+        margin-left: -13%;
+    }
+    .four{
+        position: absolute;
+        width: 11.5%;
+        margin-top:3.8%;
+        margin-left: -1.8%;
+    }
+    .squa1{
+        position: absolute;
+        margin-top: 19.8%;
+        width: 8%;
+        margin-left: -13.8%;
+    }
+    .squ2{
+        position: absolute;
+        margin-top: 3%;
+        width: 8%;
+        margin-left: 2.4%;
+    }
+    .head5{
+       margin-left: 81%;
+        margin-top: 0%;
+    }
+    
+    .head6{
+        position: absolute;
+        width: 40%;
+        margin-left: 6%;
+        margin-top: 4%;
+        text-align: justify;
+    }
+    .head6 h2{
+        font-size: 35px;
+    }
+    .head6 p span{
+        position: absolute;
+        margin-top: 4%;
+        font-size: 16.8px;
+    }
+    .line7 {
+        margin-top: 33%;
+        left:10%;
+        width:72%;
+        margin-left: 5%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+
+    .container22{
+        background-color: #B5CFDF;
+        margin-top: 3%;
+        width: 80%;
+        height: 100%;
+        margin-left: 11%;
+        height: 490px;
+    }
+    
+    .Development{
+        position: absolute;
+        margin-top: 5%;
+        margin-left: -12%;
+        width: 11.5%;
+    }
+    .week2{
+        position: absolute;
+        margin-top: 14%;
+        margin-left: -3%;
+        width: 11.5%;
+    }
+    .phase4{
+        position: absolute;
+        margin-top: 8%;
+        margin-left: -11%;
+        font-size: 16.5px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .phase5{
+        position: absolute;
+        margin-top: 19%;
+        margin-left: -0%;
+        font-size: 17px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .five{
+        position: absolute;
+        width: 11.5%;
+        margin-top:15%;
+        margin-left: -13%;
+    }
+    .six{
+        position: absolute;
+        width: 11.5%;
+        margin-top:3.8%;
+        margin-left: -1.8%;
+    }
+    .squa3{
+        position: absolute;
+        margin-top: 19.8%;
+        width: 8%;
+        margin-left: -13.8%;
+    }
+    .squ4{
+        position: absolute;
+        margin-top: 3%;
+        width: 8%;
+        margin-left: 2.4%;
+    }
+    .head7{
+        width: 95%;
+        margin-left:23.5% ;
+        margin-top:2%;
+    }
+    
+    .head8{
+        position: absolute;
+        margin-top:2.5%;
+        width: 40%;
+        margin-left: 35%;
+        text-align: justify;
+    }
+    .head8 h2{
+        font-size: 35px;
+    }
+    .head8 p span{
+        position: absolute;
+        margin-top: 4%;
+        font-size: 16.7px;
+    }
+    .line8 {
+        margin-top: 32.7%;
+        left:10%;
+        width:72%;
+        margin-left: 5%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+
+    
+    .container23{
+        background-color: #B5CFDF;
+        margin-top: 3%;
+        width: 80%;
+        height: 100%;
+        margin-left: 11%;
+        height: 490px;
+    }
+    .testing{
+        position: absolute;
+        margin-top: 5%;
+        margin-left: -12%;
+        width: 11.5%;
+    }
+    .week3{
+        position: absolute;
+        margin-top: 14%;
+        margin-left: -3%;
+        width: 11.5%;
+    }
+    .phase6{
+        position: absolute;
+        margin-top: 8%;
+        margin-left: -10%;
+        font-size: 18px;
+        font-weight: 700;
+        width: 8%;
+    }
+    .phase7{
+        position: absolute;
+        margin-top: 19%;
+        margin-left: -0%;
+        font-size: 17px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .seven{
+        position: absolute;
+        width: 11.5%;
+        margin-top:15%;
+        margin-left: -13%;
+    }
+    .eight{
+        position: absolute;
+        width: 11.5%;
+        margin-top:3.8%;
+        margin-left: -1.8%;
+    }
+    .squa5{
+        position: absolute;
+        margin-top: 19.8%;
+        width: 8%;
+        margin-left: -13.8%;
+    }
+    .squ6{
+        position: absolute;
+        margin-top: 3%;
+        width: 8%;
+        margin-left: 2.4%;
+    }
+    .head9{
+       margin-left: 81%;
+        margin-top: 0%;
+        width: 130%;
+    }
+    .head10{
+        position: absolute;
+        width: 40%;
+        margin-left: 6%;
+        margin-top: 4%;
+        text-align: justify;
+    }
+    .head10 h2{
+        font-size: 35px;
+    }
+    .head10 p span{
+        position: absolute;
+        margin-top: 4%;
+        font-size: 16.7px;
+    }
+    .line9 {
+        margin-top: 32.5%;
+        left:10%;
+        width:72%;
+        margin-left: 5%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+
+    
+    .container24{
+        background-color: #B5CFDF;
+        margin-top: 3%;
+        width: 80%;
+        margin-left: 11%;
+        height: 490px;
+    }
+    .deployment{
+        position: absolute;
+        margin-top: 5%;
+        margin-left: -12%;
+        width: 11.5%;
+    }
+    .week4{
+        position: absolute;
+        margin-top: 14%;
+        margin-left: -3%;
+        width: 11.5%;
+    }
+    .phase8{
+        position: absolute;
+        margin-top: 8.5%;
+        margin-left: -11%;
+        font-size: 15.5px;
+        font-weight: 700;
+        width:5%;
+    }
+    .phase9{
+        position: absolute;
+        margin-top: 19%;
+        margin-left: 0%;
+        font-size: 18px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .nine{
+        position: absolute;
+        width: 11.5%;
+        margin-top:15%;
+        margin-left: -13%;
+    }
+    .ten{
+        position: absolute;
+        width: 11.5%;
+        margin-top:3.8%;
+        margin-left: -1.8%;
+    }
+    .squa7{
+        position: absolute;
+        margin-top: 19.8%;
+        width: 8%;
+        margin-left: -13.8%;
+    }
+    .squ8{
+        position: absolute;
+        margin-top: 3%;
+        width: 8%;
+        margin-left: 2.4%;
+    }
+    .head11{
+        width: 95%;
+        margin-left:23.5% ;
+        margin-top: 2%;
+    }
+    .head12{
+        position: absolute;
+        margin-top:2%;
+        width: 40%;
+        margin-left: 35%;
+        text-align: justify;
+    }
+    .head12 h2{
+        font-size: 35px;
+    }
+    .head12 p span{
+        position: absolute;
+        margin-top: 4%;
+        font-size: 16.7px;
+    }
+    .line10 {
+        margin-top: 32%;
+        left:10%;
+        width:72%;
+        margin-left: 5%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+
+    
+    .container25{
+        background-color: #B5CFDF;
+        margin-top: 3%;
+        width: 80%;
+        margin-left: 11%;
+        height: 490px;
+    }
+    .maintenance{
+        position: absolute;
+        margin-top: 5%;
+        margin-left: -12%;
+        width: 11.5%;
+    }
+    .week5{
+        position: absolute;
+        margin-top: 14%;
+        margin-left: -3%;
+        width: 11.5%;
+    }
+    .phase10{
+        position: absolute;
+        margin-top: 8%;
+        margin-left: -11%;
+        font-size: 15.5px;
+        font-weight: 700;
+        width: 1%;
+    }
+    .phase11{
+        position: absolute;
+        margin-top: 19%;
+        margin-left: 0%;
+        font-size: 20px;
+        font-weight: 700;
+        width: 10%;
+    }
+    .eleven{
+        position: absolute;
+        width: 11.5%;
+        margin-top:15%;
+        margin-left: -13%;
+    }
+    .twelve{
+        position: absolute;
+        width: 11.5%;
+        margin-top:3.8%;
+        margin-left: -1.8%;
+    }
+    .squa9{
+        position: absolute;
+        margin-top: 19.8%;
+        width: 8%;
+        margin-left: -13.8%;
+    }
+    .squ10{
+        position: absolute;
+        margin-top: 3%;
+        width: 8%;
+        margin-left: 2.4%;
+    }
+    .head13{
+        margin-left: 81%;
+        margin-top: 1%;
+        width: 100%;
+    }
+    .head14{
+        position: absolute;
+        width: 40%;
+        margin-left: 6%;
+        margin-top: 3%;
+        text-align: justify;
+    }
+    .head14 h2{
+        font-size: 35px;
+    }
+    .head14 p span{
+        position: absolute;
+        margin-top: 4%;
+        font-size: 16.7px;
+        
+    }
+    .line11 {
+        margin-top: 32%;
+        left:10%;
+        width:72%;
+        margin-left: 5%;
+        height: 1px;
+        background-color:#FFCD07;
+        border: 1.5px solid #FFCD07
+    }
+}
+
+
+.head2 h2{
+    font-size: 30px;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+.boxx1{
+    display: inline-block;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+.NE{
+    width:68%;
+    margin-top: 11%;
+    margin-left: 24%;
+}
+.rect{
+    position: absolute;
+    width: 28%;
+    margin-left:-26%;
+    margin-top:2%;
+}
+.rec{
+    position: absolute;
+   margin-top: 21%;
+   margin-left: -28%;
+   width: 17%;
+}
+.boxx1 h3{
+    position: absolute;
+    margin-top: -2%;
+    margin-left: 10%;
+    font-size: 15px;
+}
+
+.boxx2{
+    display: inline-block;
+    margin-left: 4%;
+}
+.CF{
+    width:68%;
+    margin-top: 11%;
+    margin-left: 24%;
+}
+.rect1{
+    position: absolute;
+    width: 28%;
+    margin-left:-31%;
+    margin-top:2%;
+}
+.rec1{
+    position: absolute;
+   margin-top: 21%;
+   margin-left: -20%;
+   width: 17%;
+}
+.boxx2 h3{
+    position: absolute;
+    margin-top: -2%;
+    margin-left: 18%;
+    font-size: 15px;
+}
+.boxx3{
+    display: inline-block;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+.WS{
+    width:68%;
+    margin-top: 11%;
+    margin-left: 24%;
+}
+.rect2{
+    position: absolute;
+    width: 28%;
+    margin-left:-26%;
+    margin-top:2%;
+}
+.rec2{
+    position: absolute;
+   margin-top: 21%;
+   margin-left: -28%;
+   width: 17%;
+}
+.boxx3 h3{
+    position: absolute;
+    margin-top: -2%;
+    margin-left: 10%;
+    font-size: 15px;
+}
+
+.boxx4{
+    display: inline-block;
+    margin-left: 4%;
+}
+.MP{
+    width:68%;
+    margin-top: 11%;
+    margin-left: 24%;
+}
+.rect3{
+    position: absolute;
+    width: 28%;
+    margin-left:-31%;
+    margin-top:2%;
+}
+.rec4{
+    position: absolute;
+   margin-top: 21%;
+   margin-left: -20%;
+   width: 17%;
+}
+.boxx4 h3{
+    position: absolute;
+    margin-top: -2%;
+    margin-left: 18%;
+    font-size: 15px;
+}
+.load{
+    margin-top: 1%;
+    margin-left: 81%;
+    font-size: 19px;
+    color: #09A1FF;
+    text-decoration: underline;
+}
+@media (min-width: 320px) and (max-width: 374px){
+    .head2 h2{
+        font-size: 27.4px;
+        margin-top: 3%;
+        margin-left: 10%;
+    }
+    .boxx1{
+        display: inline-block;
+        margin-left:-5%;
+        margin-top: 4%;
+    }
+    .NE{
+        width:66%;
+        margin-top: 11%;
+        margin-left: 17%;
+    }
+    .rect{
+        position: absolute;
+        width: 66%;
+        margin-left:-62%;
+        margin-top:5%;
+    }
+    .rec{
+        position: absolute;
+       margin-top: 47.5%;
+       margin-left: -62%;
+       width: 50%;
+    }
+    .boxx1 h3{
+        position: absolute;
+        margin-top: -10%;
+        margin-left: 30%;
+        font-size: 11px;
+    }
+    
+    .boxx2{
+        display: inline-block;
+        margin-left:-5%;
+        margin-top: 4%;
+    }
+    .CF{
+        width:66%;
+        margin-top: 11%;
+    }
+    .rect1{
+        position: absolute;
+        width: 66%;
+        margin-left:-73%;
+        margin-top:5%;
+    }
+    .rec1{
+        position: absolute;
+       margin-top: 47.5%;
+       margin-left: -57%;
+       width: 50%;
+    }
+    .boxx2 h3{
+        position: absolute;
+        margin-top: -10%;
+        margin-left: 49%;
+        font-size: 11px;
+    }
+    .boxx3{
+        display: inline-block;
+        margin-left:-5%;
+        margin-top: 4%;
+    }
+    .WS{
+        width:66%;
+        margin-top: 11%;
+        margin-left: 17%;
+    }
+    .rect2{
+        position: absolute;
+        width: 66%;
+        margin-left:-62%;
+        margin-top:5%;
+    }
+    .rec2{
+        position: absolute;
+       margin-top: 47.5%;
+       margin-left: -62%;
+       width: 50%;
+    }
+    .boxx3 h3{
+        position: absolute;
+        margin-top: -10%;
+        margin-left: 30%;
+        font-size: 11px;
+    }
+    
+    .boxx4{
+        display: inline-block;
+        margin-left:-5%;
+        margin-top: 4%;
+    }
+    .MP{
+        width:66%;
+        margin-top: 11%;
+    }
+    .rect3{
+        position: absolute;
+        width: 66%;
+        margin-left:-73%;
+        margin-top:5%;
+    }
+    .rec4{
+        position: absolute;
+       margin-top: 47.5%;
+       margin-left: -57%;
+       width: 50%;
+    }
+    .boxx4 h3{
+        position: absolute;
+        margin-top: -10%;
+        margin-left: 49%;
+        font-size: 11px;
+    }
+    .load{
+        margin-top: 2%;
+        margin-left: 62%;
+        font-size: 16px;
+        color: #09A1FF;
+        text-decoration: underline;
+    }
+}
+@media (min-width: 375px) and (max-width: 424px){
+    .head2 h2{
+        font-size: 27px;
+        margin-top: 3%;
+        margin-left: 10%;
+    }
+    .boxx1{
+        display: inline-block;
+        margin-left:-5%;
+        margin-top: 4%;
+    }
+    .NE{
+        width:66%;
+        margin-top: 11%;
+        margin-left: 17%;
+    }
+    .rect{
+        position: absolute;
+        width: 66%;
+        margin-left:-62%;
+        margin-top:5%;
+    }
+    .rec{
+        position: absolute;
+       margin-top: 47.5%;
+       margin-left: -62%;
+       width: 50%;
+    }
+    .boxx1 h3{
+        position: absolute;
+        margin-top: -10%;
+        margin-left: 30%;
+        font-size: 11px;
+    }
+    
+    .boxx2{
+        display: inline-block;
+        margin-left:-5%;
+        margin-top: 4%;
+    }
+    .CF{
+        width:66%;
+        margin-top: 11%;
+    }
+    .rect1{
+        position: absolute;
+        width: 66%;
+        margin-left:-73%;
+        margin-top:5%;
+    }
+    .rec1{
+        position: absolute;
+       margin-top: 47.5%;
+       margin-left: -57%;
+       width: 50%;
+    }
+    .boxx2 h3{
+        position: absolute;
+        margin-top: -10%;
+        margin-left: 49%;
+        font-size: 11px;
+    }
+    .boxx3{
+        display: inline-block;
+        margin-left:-5%;
+        margin-top: 4%;
+    }
+    .WS{
+        width:66%;
+        margin-top: 11%;
+        margin-left: 17%;
+    }
+    .rect2{
+        position: absolute;
+        width: 66%;
+        margin-left:-62%;
+        margin-top:5%;
+    }
+    .rec2{
+        position: absolute;
+       margin-top: 47.5%;
+       margin-left: -62%;
+       width: 50%;
+    }
+    .boxx3 h3{
+        position: absolute;
+        margin-top: -10%;
+        margin-left: 30%;
+        font-size: 11px;
+    }
+    
+    .boxx4{
+        display: inline-block;
+        margin-left:-5%;
+        margin-top: 4%;
+    }
+    .MP{
+        width:66%;
+        margin-top: 11%;
+    }
+    .rect3{
+        position: absolute;
+        width: 66%;
+        margin-left:-73%;
+        margin-top:5%;
+    }
+    .rec4{
+        position: absolute;
+       margin-top: 47.5%;
+       margin-left: -57%;
+       width: 50%;
+    }
+    .boxx4 h3{
+        position: absolute;
+        margin-top: -10%;
+        margin-left: 49%;
+        font-size: 11px;
+    }
+    .load{
+        margin-top: 2%;
+        margin-left: 66%;
+        font-size: 15px;
+        color: #09A1FF;
+        text-decoration: underline;
+    }
+    
+}
+@media (min-width: 425px) and (max-width: 767px){
+    .head2 h2{
+        font-size: 30px;
+        margin-top: 3%;
+        margin-left: 10%;
+    }
+    .boxx1{
+        display: inline-block;
+        margin-left:-5%;
+        margin-top: 4%;
+    }
+    .NE{
+        width:66%;
+        margin-top: 11%;
+        margin-left: 17%;
+    }
+    .rect{
+        position: absolute;
+        width: 66%;
+        margin-left:-62%;
+        margin-top:5%;
+    }
+    .rec{
+        position: absolute;
+       margin-top: 47.5%;
+       margin-left: -62%;
+       width: 50%;
+    }
+    .boxx1 h3{
+        position: absolute;
+        margin-top: -10%;
+        margin-left: 30%;
+        font-size: 13px;
+    }
+    
+    .boxx2{
+        display: inline-block;
+        margin-left:-5%;
+        margin-top: 4%;
+    }
+    .CF{
+        width:66%;
+        margin-top: 11%;
+    }
+    .rect1{
+        position: absolute;
+        width: 66%;
+        margin-left:-73%;
+        margin-top:5%;
+    }
+    .rec1{
+        position: absolute;
+       margin-top: 47.5%;
+       margin-left: -57%;
+       width: 50%;
+    }
+    .boxx2 h3{
+        position: absolute;
+        margin-top: -10%;
+        margin-left: 49%;
+        font-size: 13px;
+    }
+    .boxx3{
+        display: inline-block;
+        margin-left:-5%;
+        margin-top: 4%;
+    }
+    .WS{
+        width:66%;
+        margin-top: 11%;
+        margin-left: 17%;
+    }
+    .rect2{
+        position: absolute;
+        width: 66%;
+        margin-left:-62%;
+        margin-top:5%;
+    }
+    .rec2{
+        position: absolute;
+       margin-top: 47.5%;
+       margin-left: -62%;
+       width: 50%;
+    }
+    .boxx3 h3{
+        position: absolute;
+        margin-top: -10%;
+        margin-left: 30%;
+        font-size: 13px;
+    }
+    
+    .boxx4{
+        display: inline-block;
+        margin-left:-5%;
+        margin-top: 4%;
+    }
+    .MP{
+        width:66%;
+        margin-top: 11%;
+    }
+    .rect3{
+        position: absolute;
+        width: 66%;
+        margin-left:-73%;
+        margin-top:5%;
+    }
+    .rec4{
+        position: absolute;
+       margin-top: 47.5%;
+       margin-left: -57%;
+       width: 50%;
+    }
+    .boxx4 h3{
+        position: absolute;
+        margin-top: -10%;
+        margin-left: 49%;
+        font-size: 13px;
+    }
+    .load{
+        margin-top: 2%;
+        margin-left: 66%;
+        font-size: 16px;
+        color: #09A1FF;
+        text-decoration: underline;
+    }}
+
+ @media (min-width: 768px) and (max-width: 1023px) {
+.head2 h2{
+        font-size: 30px;
+        margin-top: 3%;
+        margin-left: 10%;
+        font-family: 'lato';
+    }
+    .boxx1{
+        display: inline-block;
+        margin-left:-5%;
+        margin-top: 4%;
+        font-family: 'lato';
+    }
+    .NE{
+        width:52%;
+        margin-top: 11%;
+        margin-left: 17%;
+    }
+    .rect{
+        position: absolute;
+        width: 36%;
+        margin-left:-33%;
+        margin-top:5%;
+    }
+    .rec{
+        position: absolute;
+       margin-top: 30%;
+       margin-left: -33%;
+       width: 24%;
+    }
+    .boxx1 h3{
+        position: absolute;
+        margin-top: -6.5%;
+        margin-left: 18%;
+        font-size: 13px;
+    }
+    
+    .boxx2{
+        position: absolute;
+        display: inline-block;
+        margin-left:-35%;
+        margin-top: 4%;
+        font-family: 'lato';
+    }
+    .CF{
+        width:56%;
+        margin-top: 11%;
+        margin-left: 34%;
+    }
+    .rect1{
+        position: absolute;
+        width: 53%;
+        margin-left:-60%;
+        margin-top:7%;
+    }
+    .rec1{
+        position: absolute;
+       margin-top: 43%;
+       margin-left: -42%;
+       width: 36%;
+    }
+    .boxx2 h3{
+        position: absolute;
+        margin-top: -11%;
+        margin-left: 59%;
+        font-size: 13px;
+    }
+    .boxx3{
+        display: inline-block;
+        margin-left:-5%;
+        margin-top: 4%;
+        font-family: 'lato';
+    }
+    .WS{
+        width:52%;
+        margin-top: 11%;
+        margin-left: 17%;
+    }
+    .rect2{
+        position: absolute;
+        width: 36%;
+        margin-left:-33%;
+        margin-top:5%;
+    }
+    .rec2{
+        position: absolute;
+       margin-top: 30%;
+       margin-left: -33%;
+       width: 24%;
+    }
+    .boxx3 h3{
+        position: absolute;
+        margin-top: -6.5%;
+        margin-left: 18%;
+        font-size: 13px;
+    }
+    
+    
+    .boxx4{
+        position: absolute;
+        display: inline-block;
+        margin-left:-35%;
+        margin-top: 4%;
+        font-family: 'lato';
+    }
+    .MP{
+        width:56%;
+        margin-top: 11%;
+        margin-left: 34%;
+    }
+    .rect3{
+        position: absolute;
+        width: 53%;
+        margin-left:-60%;
+        margin-top:7%;
+    }
+    .rec4{
+        position: absolute;
+       margin-top: 43%;
+       margin-left: -42%;
+       width: 36%;
+    }
+    .boxx4 h3{
+        position: absolute;
+        margin-top: -11%;
+        margin-left: 59%;
+        font-size: 13px;
+    }
+    .load{
+        margin-top: 1%;
+        margin-left: 81%;
+        font-size: 19px;
+        color: #09A1FF;
+        text-decoration: underline;
+        font-family: 'LATO';
+    }
+    
+ }
+ 
+ @media (min-width: 1024px) and (max-width: 1350px){
+    .head2 h2{
+        font-size: 30px;
+        margin-top: 4%;
+        margin-left: 8%;
+    }
+    .boxx1{
+        display: inline-block;
+        margin-left: -2%;
+        margin-top: 1%;
+    }
+    .NE{
+        width:54%;
+        margin-top: 11%;
+        margin-left: 24%;
+    }
+    .rect{
+        position: absolute;
+        width: 28%;
+        margin-left:-26%;
+        margin-top:3%;
+    }
+    .rec{
+        position: absolute;
+       margin-top: 22%;
+       margin-left: -28%;
+       width: 18.5%;
+    }
+    .boxx1 h3{
+        position: absolute;
+        margin-top: -6%;
+        margin-left: 17%;
+        font-size: 13px;
+    }
+    
+    .boxx2{
+        position: absolute;
+        display: inline-block;
+        margin-left: 2%;
+    }
+    .CF{
+        width:66%;
+        margin-top: 15%;
+        margin-left: 19%;
+    }
+    .rect1{
+        position: absolute;
+        width: 63%;
+        margin-left:-70%;
+        margin-top:9%;
+    }
+    .rec1{
+        position: absolute;
+       margin-top: 52%;
+       margin-left: -44%;
+       width: 37%;
+    }
+    .boxx2 h3{
+        position: absolute;
+        margin-top: -13%;
+        margin-left: 50%;
+        font-size: 13px;
+    }
+    .boxx3{
+        display: inline-block;
+        margin-left: -3%;
+        margin-top: 1%;
+    }
+    .WS{
+        width:54%;
+        margin-top: 11%;
+        margin-left: 24%;
+    }
+    .rect2{
+        position: absolute;
+        width: 28%;
+        margin-left:-26%;
+        margin-top:3%;
+    }
+    .rec2{
+        position: absolute;
+       margin-top: 22%;
+       margin-left: -28%;
+       width: 18.5%;
+    }
+    .boxx3 h3{
+        position: absolute;
+        margin-top: -6%;
+        margin-left: 17%;
+        font-size: 13px;
+    }
+    
+    .boxx4{
+        position: absolute;
+        display: inline-block;
+        margin-left: 2%;
+    }
+    .MP{
+        width:66%;
+        margin-top: 15%;
+        margin-left: 19%;
+    }
+    .rect3{
+        position: absolute;
+        width: 63%;
+        margin-left:-70%;
+        margin-top:9%;
+    }
+    .rec4{
+        position: absolute;
+       margin-top: 52%;
+       margin-left: -44%;
+       width: 37%;
+    }
+    .boxx4 h3{
+        position: absolute;
+        margin-top: -13%;
+        margin-left: 50%;
+        font-size: 13px;
+    }
+    .load{
+        margin-top: 2.5%;
+        margin-left: 83%;
+        font-size: 19px;
+        color: #09A1FF;
+        text-decoration: underline;
+    }
+ }
+ @media (min-width: 1400px) and (max-width: 1500px){
+    .head2 h2{
+        font-size: 35px;
+        margin-top: 3%;
+        margin-left: 10%;
+    }
+    .boxx1{
+        display: inline-block;
+        margin-left: 4%;
+        margin-top: 1%;
+    }
+    .NE{
+        width:74%;
+        margin-top: 11%;
+        margin-left: 24%;
+    }
+    .rect{
+        position: absolute;
+        width: 28%;
+        margin-left:-26%;
+        margin-top:2%;
+    }
+    .rec{
+        position: absolute;
+       margin-top: 21%;
+       margin-left: -28%;
+       width: 17%;
+    }
+    .boxx1 h3{
+        position: absolute;
+        margin-top: -4.5%;
+        margin-left: 13%;
+        font-size: 15px;
+    }
+    
+    .boxx2{
+        display: inline-block;
+        margin-left: 4%;
+    }
+    .CF{
+        width:74%;
+        margin-top: 15%;
+        margin-left: 27%;
+    }
+    .rect1{
+        position: absolute;
+        width: 28%;
+        margin-left:8%;
+        margin-top:-25%;
+    }
+    .rec1{
+       margin-top: -5.7%;
+       margin-left: 20%;
+       width: 17%;
+      
+    }
+    .boxx2 h3{
+        position: absolute;
+        margin-top:-4.5%;
+        margin-left: 25%;
+        font-size: 15px;
+    }
+    .boxx3{
+        display: inline-block;
+        margin-left: 4%;
+        margin-top: 1%;
+    }
+    .WS{
+        width:74%;
+        margin-top: 11%;
+        margin-left: 24%;
+    }
+    .rect2{
+        position: absolute;
+        width: 28%;
+        margin-left:-26%;
+        margin-top:2%;
+    }
+    .rec2{
+        position: absolute;
+       margin-top: 21%;
+       margin-left: -28%;
+       width: 17%;
+    }
+    .boxx3 h3{
+        position: absolute;
+        margin-top: -4.5%;
+        margin-left: 13%;
+        font-size: 15px;
+    }
+    
+    .boxx4{
+        display: inline-block;
+        margin-left: 4%;
+    }
+    .MP{
+        width:74%;
+        margin-top: 15%;
+        margin-left: 27%;
+    }
+    .rect3{
+        position: absolute;
+        width: 28%;
+        margin-left:8%;
+        margin-top:-25%;
+    }
+    .rec4{
+       margin-top: -5.7%;
+       margin-left: 20%;
+       width: 17%;
+      
+    }
+    .boxx4 h3{
+        position: absolute;
+        margin-top:-4.5%;
+        margin-left: 25%;
+        font-size: 15px;
+    }
+    .load{
+        margin-top: 1%;
+        margin-left: 79%;
+        font-size: 19px;
+        color: #09A1FF;
+        text-decoration: underline;
+    }
+    
+ }

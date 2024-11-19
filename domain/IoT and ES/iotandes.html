@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <title>IoT & Embedded Systems</title>
+    <link rel="stylesheet" href="./iotandes.css">
+    <link rel="icon" type="image/cube-icon" href="../../../favicon.png">
+</head>
+
+<body>
+    <!--------------------------------------------------------- Navbar begin -------------------------------------------------------------->
+
+    <div class="fixed">
+        <header id="navbar">
+            <div class="navbar-logo">
+                <img src="images/cas-logo.svg" alt="Logo" />
+                <a class="cubeaisolutions"><span style="color: #004e69">C</span>ube<span
+                        style="color: #004e69">A</span><span style="color: #2596be">I</span><span
+                        style="color: #004e69">S</span>olutions</a>
+            </div>
+            <div class="navbar-right">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../About us/about us.html">About</a></li>
+                        <li><a href="../../Service Page/Service.html">Services</a></li>
+                        <li><a href="../../contact-us/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- <div class="search-menu-icon">
+                    <img src="images/searchIcon.svg" alt="search-icon" />
+                </div> -->
+                <div class="search-menu-icon menu-icon" onclick="togglePopup('popup', this)">
+                    <img src="images/menuicon.svg" alt="menu-icon" />
+                </div>
+                <div class="popup-container" id="popup">
+                    <div class="popup-content">
+                        <div class="popup-close"
+                            onclick="togglePopup('popup', document.querySelector('.navbar-right .menu-icon'))">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z" />
+                            </svg>
+                        </div>
+                        <div class="popup-links">
+                            <a href="../../index.html" class="popup-links-content1">Home</a>
+                            <a href="../../About us/about us.html" class="popup-links-content1">About Us</a>
+                            <a href="../../Service Page/Service.html" class="popup-links-content1">Services</a>
+                            <a href="../../contact-us/contact.html" class="popup-links-content1">Contact</a>
+                            <a href="#">Industries</a>
+                            <a href="#">Gallery</a>
+                            <a href="#">Careers</a>
+                        </div>
+                        <div class="popup-social-icons">
+                            <a href="https://x.com/CubeAISolutions" target="_blank"><img src="images/Twitter.svg"
+                                    alt="Twitter"></a>
+                            <a href="https://www.instagram.com/cubeaisolutions_tech?igsh=MXEzamNmbTRsYmlyMA=="
+                                target="_blank"><img src="images/Instagram.svg" alt="Instagram"></a>
+                            <a href="https://www.facebook.com/profile.php?id=61561157782258" target="_blank"><img
+                                    src="images/Facebook.svg" alt="Facebook"></a>
+                            <a href="https://www.linkedin.com/company/cubeaisolutions-tech-pvt-ltd" target="_blank"><img
+                                    src="images/Linkedin.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header-content" id="header-content">
+            <div class="pop-head">
+                <div class="logo" id="header-logo">
+                    <a href="../../Service Page/Service.html">
+                        <h1 class="back"><i class="fas fa-arrow-left"></i></h1>
+                    </a>
+                    <h1 id="app-development-title">IoT & Embedded Systems</h1>
+                </div>
+                <div class="search-menu-icon menu-icon menu-icon-w" onclick="togglePopup('header-popup', this)">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <nav>
+                <ul id="nav-links" class="nav-links">
+                    <li><a href="#what-we-do">What we do</a></li>
+                    <li><a href="#tough_challenge">Solutions</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#Future">Future plan</a></li>
+                </ul>
+            </nav>
+            <div class="popup-container left-popup" id="header-popup">
+                <div class="popup-content">
+                    <div class="popup-close"
+                        onclick="togglePopup('header-popup', document.querySelector('.header-content .menu-icon'))">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z" />
+                        </svg>
+                    </div>
+                    <div class="popup-links">
+                        <a href="#what-we-do">What we do</a>
+                        <a href="#tough_challenge">Solutions</a>
+                        <a href="#trending">Trending</a>
+                        <a href="#Future">Future plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------Navbar ends------------------------------------------------------------------>
+
+    <!---------------------------------------------------------Banner starts --------------------------------------------------------------->
+    <section>
+        <div class="apps">
+            <div class="apps-text">
+                <h1>Architects of Seamless Connectivity and Embedded Intelligence</h1>
+                <p>Our consultants specialize in overcoming the challenges of IoT and embedded systems deployment. This
+                    includes ensuring interoperability and compatibility across diverse devices and platforms,
+                    optimizing power consumption for energy-efficient operation, and addressing security concerns to
+                    safeguard against cyber threats and data breaches.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-----------------------------------------------------------Banner ends---------------------------------------------------------------->
+
+    <!-----------------------------------------------------------What we do starts---------------------------------------------------------->
+    <div class="container">
+        <div class="what-we-do" id="what-we-do">
+            <h1>What we do ?</h1><br>
+            <p>
+                Our IoT and embedded systems team specializes in designing, developing, and deploying innovative
+                solutions that leverage the power of connectivity and embedded intelligence. We create custom IoT
+                solutions tailored to your specific requirements, from sensor integration and data analytics to cloud
+                connectivity and application development. Our expertise spans various industries, including smart
+                cities, healthcare, agriculture, and manufacturing, and reliable solutions that drive operational
+                efficiency and unlock new opportunities for growth.
+            </p>
+        </div>
+
+        <div class="image-container">
+            <img src="img/whatwedo.png">
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------What we do ends--------------------------------------------------------->
+
+    <!--------------------------------------------------------------Tackling starts--------------------------------------------------------->
+    <div class="tackling">
+        <h1>Tackling Your Toughest Challenges in IoT & Embedded Systems:</h1>
+
+
+        <div class="toughest" id="tough_challenge">
+            <div class="challenge">
+                <h2>Seamless Connectivity:</h2>
+                <p>
+                    IoT and embedded systems facilitate seamless connectivity between devices, enabling real-time data
+                    exchange and communication. This interconnectedness revolutionizes industries, from smart homes to
+                    industrial automation, enhancing efficiency and productivity.
+                </p>
+                <h2>Revolutionizing Industries:</h2>
+                <p>
+                    IoT and embedded systems create an interconnected ecosystem where devices communicate and share data
+                    in real-time. This transformation spans multiple sectors, from smart homes equipped with automated
+                    lighting and heating systems to complex industrial automation systems that streamline manufacturing
+                    processes.
+                </p>
+                <h2>Enhanced Efficiency and Productivity:</h2>
+                <p>
+                    The ability to connect and control devices remotely leads to significant improvements in operational
+                    efficiency. For instance, in agriculture, IoT devices monitor soil moisture levels and weather
+                    conditions to optimize irrigation schedules, while in healthcare, connected devices allow for
+                    continuous patient monitoring and timely medical interventions.
+                </p>
+            </div>
+            <div class="toughest-image">
+                <img src="img/toughest.png">
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------------------Tackling ends--------------------------------------------------------------->
+
+    <!----------------------------------------------------------Proven starts--------------------------------------------------------------->
+
+    <div class="proven">
+        <div class="expertise">
+            <h2>Proven Expertise:</h2>
+            <p>Embedded systems embed intelligence directly into devices, enabling autonomous decision-making and
+                performance optimization. From smart sensors in manufacturing to wearable devices in healthcare,
+                embedded intelligence enhances functionality and user experience.</p>
+            <img src="img/proven.png" alt="Embedded Systems Image">
+        </div>
+        <div class="total-innovation">
+            <div class="innovation-img">
+                <img src="img/5g.png" alt="5G Icon">
+            </div>
+            <div class="innovation">
+                <h2>Innovation and Adaptability:</h2>
+                <p>We stay at the forefront of technological advancements and industry trends, constantly innovating to
+                    deliver cutting-edge solutions that drive tangible results and competitive advantage.</p>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------Proven ends-------------------------------------------------------------->
+
+    <!------------------------------------------------------------Embedded starts---------------------------------------------------------->
+
+    <div class="embedded">
+        <h2>Embedded Intelligence:</h2>
+        <p>Autonomous Decision-Making: <br>
+            Embedded systems integrate smart algorithms that enable devices to operate autonomously. For example, in
+            smart factories, sensors and embedded systems work together to predict equipment failures and perform
+            maintenance tasks without human intervention.</p>
+        <p>Performance Optimization: <br>
+            Devices equipped with embedded intelligence can optimize their performance based on real-time data analysis.
+            Wearable health devices, for instance, track physical activity and vital signs, providing users with
+            personalized health recommendations and alerts.</p>
+    </div>
+
+    <!------------------------------------------------------------Embedded ends------------------------------------------------------------>
+
+    <!------------------------------------------------------------Container starts--------------------------------------------------------->
+
+    <div class="container">
+        <div class="what-we-do">
+            <h2>Ensuring Interoperability and Compatibility</h2><br>
+            <p>
+            <h3>Diverse Devices and Platforms: </h3>
+            <p> Our consultants address the complexities of integrating various devices and platforms to ensure they
+                work seamlessly together. We focus on standardization and use of universal communication protocols to
+                enable interoperability.
+            </p>
+            <h3>Optimizing Power Consumption:</h3>
+            <p> Energy efficiency is critical for IoT devices, especially those that operate on battery power. We
+                develop strategies and technologies to minimize power usage, extending the operational life of devices
+                without compromising performance.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="img/AI Essentials Icon Set.png">
+        </div>
+    </div>
+
+
+    <div class="container-one">
+        <div class="addressing">
+            <h2>Addressing Security Concerns:</h2><br>
+            <p>
+            <h3>Safeguarding Against Cyber Threats: </h3>
+            <p> With the proliferation of connected devices, security is paramount. Our experts implement comprehensive
+                security measures, including hardware-based encryption, secure boot mechanisms, and regular security
+                audits, to protect against cyber threats and data breaches.
+            </p>
+            <h3>Scalability and Future-Proofing: </h3>
+            <p> As your IoT ecosystem grows, our solutions are designed to scale seamlessly. We ensure that your
+                infrastructure can accommodate increasing numbers of devices and evolving technological advancements
+                without requiring significant overhauls.</p>
+        </div>
+
+        <div class="image-container1">
+            <img src="img/Cloud Icons.png">
+        </div>
+    </div>
+
+    <!------------------------------------------------------------Conatiner ends----------------------------------------------------------->
+
+    <!------------------------------------------------------------Trending starts---------------------------------------------------------->
+
+    <div class="trending" id="trending">
+        <h1>What's Trending in IoT & Embedded Systems:</h1>
+        <div class="trend">
+            <h2>Edge Computing:</h2>
+            <p>Reducing Latency and Bandwidth Usage:<br>
+                By processing data closer to the source, edge computing reduces the time it takes for data to travel to
+                central servers and back. This approach is crucial for applications requiring real-time decision-making,
+                such as autonomous vehicles and industrial automation.</p>
+            <p>Enhanced Data Privacy:<br>
+                Processing data locally also enhances privacy and security, as sensitive information does not need to be
+                transmitted over long distances.</p>
+        </div>
+
+        <div class="trend">
+            <h2>AI and Machine Learning Integration:</h2>
+            <p>Predictive Maintenance and Anomaly Detection:<br>
+                Embedding AI and machine learning algorithms into IoT devices enables predictive maintenance, allowing
+                systems to anticipate and address issues before they cause downtime. Anomaly detection helps identify
+                unusual patterns that may indicate potential security breaches or system failures.</p>
+            <p>Intelligent Decision-Making:<br>
+                Smart devices can analyse vast amounts of data and make informed decisions autonomously, improving
+                efficiency and reducing the need for human intervention.</p>
+        </div>
+
+        <div class="trend">
+            <h2>Security Advancements:</h2>
+            <p>Hardware-Based Encryption:<br>
+                Implementing encryption at the hardware level ensures that data is protected from the moment it is
+                generated until it is received and processed.</p>
+            <p>Secure Boot Mechanisms:<br>
+                These mechanisms ensure that devices only run trusted software, preventing unauthorized access and
+                tampering</p>
+        </div>
+    </div>
+
+
+    <section class="trending-section">
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="grid-text">
+                    <h2>Customized Approach:</h2>
+                    <p>We understand that each project is unique, and we tailor our strategies and solutions to align
+                        with your specific goals, challenges, and requirements.</p>
+                </div>
+                <img src="img/Rectangle 1376.png">
+
+            </div>
+            <div class="grid-item center-item">
+                <div class="grid-text">
+                    <h2>Robust Security Measures:</h2>
+                    <p>Security is paramount in IoT and embedded systems, and we prioritize the implementation of robust
+                        security measures to protect against cyber threats and ensure the integrity and confidentiality
+                        of your data.</p>
+                </div>
+                <img src="img/Rectangle 1376 (1).png">
+
+            </div>
+            <div class="grid-item">
+                <div class="grid-text">
+                    <h2>Transparent Communication:</h2>
+                    <p>We believe in clear and transparent communication with our clients, providing regular updates and
+                        insights throughout the project lifecycle to foster collaboration and trust.</p>
+                </div>
+                <img src="img/Rectangle 1376 (2).png">
+
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------------------------Trending ends------------------------------------------------------------->
+
+    <!-----------------------------------------------------------Form page Starts--------------------------------------------------------->
+
+    <div class="form-container">
+        <div class="form">
+            <div class="form-header">
+                <div class="company-info">
+                    <span class="company-name">CubeAISolutions Tech</span>
+                    <img src="images/cas-logo.svg" alt="Company Logo" class="company-logo">
+                </div>
+                <div class="form-heading">For Enquiry</div>
+            </div>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="aac69ced-9d46-4fec-a5ba-97d7cd98b5ed">    
+                <input type="hidden" name = "Page" value="IoT and ES">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="fullName">Full Name</label>
+                        <div class="position-relative">
+                            <input type="text" class="form-control" name="Name" id="fullName" placeholder="Enter your Name">
+                            <span class="form-control-icon">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="phoneNumber">Phone Number</label>
+                        <div class="position-relative">
+                            <input type="text" class="form-control" name="Phone Number" id="phoneNumber"
+                                placeholder="Enter your Phone Number">
+                            <span class="form-control-icon">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="position-relative">
+                        <input type="email" class="form-control" name="Email" id="email" placeholder="Enter your Email">
+                        <span class="form-control-icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group textarea-container">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="Message" rows="4" placeholder="Your message here."></textarea>
+                    <span class="form-control-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </span>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="iot&es.js"></script>
+</body>
+
+</html>

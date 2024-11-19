@@ -1,0 +1,2115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+}
+/******************************************************* Navbar starts ************************************************************/
+.fixed {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    margin-top: -150px;
+}
+
+#navbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 100px;
+}
+
+.cubeaisolutions {
+    font-size: xx-large;
+    color: #2596be;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.header-content .nav-links li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    font-weight: bold;
+
+    transition: color 0.3s;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    font-weight: bold;
+
+    transition: color 0.3s;
+}
+
+/* .nav-links li a:hover {
+    color: #004E69;
+} */
+
+.search-icon img {
+    display: none;
+}
+
+.search-menu-icon img {
+    width: 25px;
+    margin-right: 20px;
+
+}
+
+.pop-head {
+    display: contents;
+}
+
+.popup-container {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: none;
+    opacity: 0.86;
+}
+
+.popup-container.left-popup {
+    top: 185px;
+    left: 0px;
+}
+
+.popup-container.right-popup {
+    top: 60px;
+    right: 20px;
+}
+
+.popup-content {
+    padding: 10px;
+    font-size: 22px;
+
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.popup-close svg {
+    fill: #fff;
+    width: 20px;
+}
+
+.popup-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.popup-social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.popup-social-icons img {
+    width: 30px;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navbar {
+    background-color: white;
+    color: #fffefe;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    margin-right: auto;
+}
+
+.logo {
+    text-decoration: none;
+    margin-right: auto;
+    display: flex;
+    gap: 15px;
+    padding: 0 10px;
+}
+
+.header-content .logo .back {
+    transform: scale(1);
+    padding-left: 8px;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 40px;
+}
+
+.nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 2% 20%;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.header-content {
+    background: #5a5d9d;
+    padding: 15px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-content .logo li {
+    list-style-type: none;
+    color: white;
+    padding: 2%;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+    font-size: large;
+    font-size: 1.5rem;
+}
+
+.header-content .logo h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-content .popup {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    padding: 10px 0;
+    position: relative;
+}
+
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links ul li {
+    margin: 0 20px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.menu-icon img,
+.menu-icon i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.menu-icon i {
+    display: none;
+}
+
+.menu-icon.active i {
+    display: inline-block;
+}
+
+.menu-icon-w i {
+    color: #ffffff;
+}
+
+/***************************************************** Navbar ends ****************************************************************/
+
+/***************************************************** Banner starts ***************************************************************/
+.apps {
+    margin-top: 150px;
+    background-image: url('img/Rectangle\ 1367.png');
+    color: #fff;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.apps-text {
+    Width: auto;
+    margin-left: 45%;
+
+}
+
+.apps-text h1 {
+    padding-top: 20%;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: left;
+
+}
+
+.apps-text p {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0% 0 120px;
+
+}
+
+/****************************************************** Banner ends *************************************************************/
+
+/****************************************************** What we do starts *******************************************************/
+
+.what-we-do {
+    background-color: #5a5d9d;
+    border-radius: 0px 100px 100px 0px;
+    padding: 70px;
+    max-width: 900px;
+    margin-left: -165px;
+    margin-top: 10px;
+    color: white;
+    padding-left: 80px;
+}
+
+.what-we-do h1 {
+    font-size: 40px;
+}
+
+.what-we-do h2 {
+    font-size: 28px;
+    color: black;
+}
+
+.what-we-do h3 {
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.577);
+}
+
+.what-we-do p {
+    line-height: 36px;
+    font-size: 26px;
+}
+
+.image-container {
+    padding: 20px;
+}
+
+.image-container img {
+    border-radius: 50%;
+}
+
+/******************************************************** what we do ends ********************************************************/
+
+/******************************************************** Tackling starts ********************************************************/
+
+.tackling h1 {
+    padding-top: 40px;
+    font-size: 60px;
+    padding-left: 30px;
+}
+
+.toughest {
+    margin-top: 3%;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #5a5d9d;
+    border-radius: 100px;
+    width: 95%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.challenge {
+    color: white;
+    flex: 1 1 300px;
+    padding: 60px;
+    line-height: 1.6;
+}
+
+.challenge h2 {
+    font-size: 28px;
+    color: black;
+}
+
+.challenge p {
+    line-height: 36px;
+    font-size: 24px;
+}
+
+/********************************************************** Tackling ends **********************************************************/
+
+/*********************************************************** Proven starts *********************************************************/
+
+.proven {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-evenly;
+}
+
+.proven p {
+    line-height: 36px;
+    padding-top: 30px;
+    padding: 30px;
+    padding-bottom: 70px;
+    text-align: left;
+    font-size: 26px;
+}
+
+.expertise,
+.innovation {
+    background-color: #5a5d9d;
+    color: white;
+    border-radius: 100px;
+    margin: 10px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.expertise h2 {
+    padding: 50px;
+    text-align: left;
+    color: black;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.total-innovation {
+    display: flex;
+    flex-direction: column;
+}
+
+.innovation h2 {
+    padding: 30px;
+    text-align: left;
+    color: black;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+
+.expertise img,
+.innovation-img img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.innovation-img img {
+    padding-left: 90px;
+}
+
+.innovation {
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.innovation img {
+    max-width: 100px;
+}
+
+/******************************************************* Proven ends ***********************************************************/
+
+/******************************************************* Embedded starts *******************************************************/
+.embedded {
+    background-image: url(img/embedded.png);
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 36px;
+    padding: 60px;
+}
+
+.embedded h2 {
+    padding-bottom: 25px;
+    font-size: 28px;
+    color: black;
+}
+
+.embedded p {
+    line-height: 36px;
+    font-size: 26px;
+}
+
+/************************************************************ Embedded ends *****************************************************/
+
+/************************************************************ Container starts **************************************************/
+.container-one {
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addressing {
+    background-color: #5a5d9d;
+    border-radius: 100px 0px 0px 100px;
+    padding: 70px;
+    max-width: 900px;
+    margin-left: -72px;
+    margin-top: 10px;
+    color: white;
+    padding-left: 100px;
+}
+
+.addressing h2 {
+    font-size: 28px;
+    color: black;
+}
+
+.addressing h3 {
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.577);
+}
+
+.addressing p {
+    line-height: 36px;
+    font-size: 26px;
+}
+
+.image-container {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    height: auto;
+    max-width: 100%;
+}
+
+/**************************************************** Container ends *************************************************************/
+
+/****************************************************** Trending starts **********************************************************/
+.trending {
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.trending h1 {
+    font-size: 40px;
+    color: black;
+}
+
+.trend {
+    background-color: #5a5d9d;
+    ;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.trend h2 {
+    color: black;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.trend p {
+    line-height: 36px;
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.trending-section {
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+    background-color: white;
+}
+
+.trending-section h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.center-item {
+    margin-top: 150px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.grid-item {
+    background-color: #5a5d9d;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+.grid-text {
+    padding: 20px;
+}
+
+.grid-text h2 {
+    font-weight: 800;
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.grid-text p {
+    color: white;
+    font-size: 20px;
+}
+
+/*************************************************** Trending ends ***************************************************************/
+
+/*************************************************** Form page starts ***************************************************************/
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.contact-form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 100%;
+    max-width: 1380px;
+    height: auto;
+}
+
+.header-form {
+    display: flex;
+    flex-direction: row;
+    /* Changed to column for better stacking on smaller screens */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-form h2 {
+    width: 245px;
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* Added margin for better spacing */
+}
+
+.company-logo img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.company-info h1 {
+    font-size: 24px;
+}
+
+.enquiry-title h2 {
+    font-size: 20px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-form .form-group {
+    width: 100%;
+}
+
+.company-logo {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    /* Adjusted to 100% for better responsiveness */
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form .form-group:nth-child(1) {
+    grid-column: 1 / 2;
+}
+
+.contact-form .form-group:nth-child(2) {
+    grid-column: 2 / 3;
+}
+
+.contact-form .form-group:nth-child(3),
+.contact-form .form-group:nth-child(4) {
+    grid-column: 1 / -1;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    /* Adjusted to 100% for better responsiveness */
+    margin-top: 20px;
+
+}
+
+button:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+/*************************************************** Form page ends ***************************************************************/
+
+/***************************************** Define the sliding animation **********************************************************/
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/****************************************** Define the sliding animation **********************************************************/ 
+
+
+@media (max-width: 760px) {
+
+/**************************************************** Navbar starts **************************************************************/
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar-logo img {
+        width: 40px;
+    }
+
+    .popup-content {
+        font-size: 18px;
+    }
+
+    .header-content .popup {
+        display: block;
+    }
+
+    .popup-container {
+
+        height: auto;
+
+    }
+
+    .popup-container.left-popup {
+        top: 80px;
+        margin-left: auto;
+    }
+
+    .cubeaisolutions {
+        font-size: large;
+    }
+
+    .nav-links li a {
+        font-size: 15px;
+    }
+
+    #navbar {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+
+    .search-icon img {
+        display: block;
+    }
+
+    .search-icon img {
+        width: 20px;
+    }
+
+
+    .menu-icon i {
+        display: block;
+        font-size: 20px;
+    }
+
+    .popup-content {
+        font-size: 18px;
+    }
+
+    .popup-close {
+        top: 20px;
+        right: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-header {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .nav.active {
+        display: flex;
+        transform: translateY(0);
+    }
+
+    .nav li {
+        margin: 10px 0;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .header-content {
+        align-items: center;
+        padding: 6px;
+        display: flex;
+        width: 100%;
+    }
+
+    .header-content .logo h1 {
+        font-size: 19px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links ul li {
+        margin: 10px 0;
+    }
+
+    .fixed {
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        margin-top: -82px;
+    }
+
+/******************************************************* Navbar ends ****************************************************************/
+
+/**************************************************** What we do starts ************************************************************/
+    .what-we-do {
+        background-color: #5a5d9d;
+        border-radius: 0px 100px 100px 0px;
+        padding: 40px;
+        max-width: 900px;
+        margin-left: -118px;
+        margin-top: 10px;
+        color: white;
+        padding-left: 140px;
+    }
+
+    .container {
+        margin-top: 0%;
+    }
+
+    .tackling h1 {
+        padding-left: 5%;
+        padding-top: 10px;
+        font-size: 24px;
+    }
+
+    .what-we-do h1 {
+        font-size: 26px;
+    }
+
+    .what-we-do h3 {
+        font-size: 22px;
+        color: rgba(0, 0, 0, 0.577);
+    }
+
+    .what-we-do p {
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+/*************************************************** What we do ends **********************************************************/
+
+/**************************************************** Banner begins **********************************************************/
+    .apps {
+        margin-top: 82px;
+        align-content: center;
+        width: 100%;
+    }
+
+    .apps-text h1 {
+        font-size: 24px;
+        padding: 2% 0;
+    }
+
+
+
+    .apps-text {
+        width: 100%;
+        margin-left: 0;
+        padding: 15% 7%;
+    }
+
+    .apps-text p {
+        font-size: 16px;
+        line-height: 1.5;
+        padding-left: 2%;
+        font-weight: 600;
+        padding: 0% 0;
+    }
+
+    .apps-image {
+        width: 100%;
+        margin-top: 10%;
+        margin-left: 0;
+    }
+
+    /************************************************** Banner ends **********************************************************/
+
+    /************************************************** Proven starts **********************************************************/
+
+    .proven {
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0px;
+        justify-content: space-evenly;
+    }
+
+    .expertise,
+    .innovation {
+        background-color: #5a5d9d;
+        color: white;
+        border-radius: 30px;
+        margin: 10px;
+        max-width: 700px;
+        text-align: center;
+    }
+
+    .expertise h2,
+    .innovation h2 {
+        padding: 20px;
+        text-align: left;
+        color: black;
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .innovation-img img {
+        padding-left: 0px;
+    }
+
+    .proven p {
+        line-height: 20px;
+        padding-top: 30px;
+        padding: 13px;
+        padding-bottom: 5%;
+        text-align: left;
+        font-size: 16px;
+    }
+
+/*********************************************** Proven ends ***************************************************************/
+
+/*********************************************** Tackling starts ***************************************************************/
+    .toughest {
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+
+    .toughest-image img {
+        height: 50vh;
+        width: 100%;
+    }
+
+    .challenge {
+        color: white;
+        flex: 1 1 300px;
+        padding: 20px;
+    }
+
+    .challenge h2 {
+        font-size: 24px;
+        color: black;
+    }
+
+    .challenge p {
+        font-weight: 400;
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .toughest-image {
+        width: 100%;
+    }
+
+/*********************************************** Tackling ends ***************************************************************/
+
+/*********************************************** Embedded starts ***************************************************************/
+
+    .embedded {
+        color: #fff;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .embedded h2 {
+        padding-top: 10px;
+        padding-bottom: 25px;
+        font-size: 24px;
+        color: black;
+    }
+
+    .embedded p {
+        line-height: 20px;
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+/*********************************************** Embedded ends ***************************************************************/
+
+/*********************************************** Container starts ***************************************************************/
+
+    .image-container img {
+        height: 85%;
+        max-width: 100%;
+    }
+
+    .image-container1 img {
+        height: 100%;
+        max-width: 100%;
+    }
+
+    .container-one {
+        margin: 0 auto;
+        margin-top: 0;
+        display: inline-block;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .addressing {
+        background-color: #5a5d9d;
+        border-radius: 100px 0px 0px 100px;
+        padding: 30px;
+        max-width: 900px;
+        margin-left: 0px;
+        margin-top: 10px;
+        color: white;
+        padding-left: 50px;
+    }
+
+    .addressing h2 {
+        font-size: 22px;
+        color: black;
+    }
+
+    .addressing h3 {
+        font-size: 22px;
+        color: rgba(0, 0, 0, 0.577);
+    }
+
+    .addressing p {
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+/*********************************************** Container ends ***************************************************************/
+
+/*********************************************** Trending starts ***************************************************************/
+
+    .trending h1 {
+        font-size: 28px;
+        color: black;
+    }
+
+    .trend {
+        background-color: #5a5d9d;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .trend h2 {
+        color: black;
+        font-size: 22px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .trend p {
+        line-height: 20px;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .trending-app {
+        padding: 30px;
+    }
+
+    .trending-section {
+        height: auto;
+    }
+
+    .trend-item-app {
+        padding: 10px;
+    }
+
+    .trend-item-app h3 {
+        font-size: 21px;
+    }
+
+    .trend-item-app p {
+        font-size: 18px;
+    }
+
+    .trend-item-app img {
+        margin: 10px 0;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .grid-text h2 {
+        text-align: left;
+        font-size: 22px;
+    }
+
+    .grid-text p {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-text {
+        text-align: center;
+    }
+
+
+    .center-item {
+        margin-top: 0px;
+    }
+
+/*********************************************** Trending ends ***************************************************************/
+
+/*********************************************** Form page starts ***************************************************************/
+
+    .header-form {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .company-info {
+        margin-bottom: 10px;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form .form-group:nth-child(1),
+    .contact-form .form-group:nth-child(2),
+    .contact-form .form-group:nth-child(3),
+    .contact-form .form-group:nth-child(4) {
+        grid-column: 1 / -1;
+    }
+
+    .company-info h1 {
+        font-size: 19px;
+    }
+
+/*********************************************** Form page ends ***************************************************************/
+
+}
+
+
+
+
+@media (min-width: 426px) and (max-width: 770px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .popup-container.left-popup {
+        top: 175px;
+        left: 0px;
+    }
+
+    .popup-container.left-popup {
+        left: 0px;
+        top: 175px;
+    }
+
+    .header-content .popup {
+        display: block;
+    }
+
+
+
+    .popup-container.right-popup {
+        right: 20px;
+    }
+
+    .search-icon img {
+        display: block;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1140px) {
+
+/*********************************************** Navbar starts ***************************************************************/
+
+
+    .search-icon img {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .header-content {
+        align-items: center;
+        padding: 6px;
+    }
+
+    .header-content .logo h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .nav-links ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-links ul li {
+        margin: 0 10px;
+    }
+
+
+    .header-form {
+        display: flex;
+
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+
+    .trending-section h1 {
+        font-size: 30px;
+    }
+
+    .containers h1 {
+        font-size: 30px;
+    }
+
+    .search-icon img {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .header-content {
+        align-items: center;
+        padding: 20px;
+    }
+
+    .header-content .logo h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .nav-links ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-links ul li {
+        margin: 0 10px;
+    }
+
+    .enquiry-title h2 {
+        font-size: 24px;
+    }
+
+/*********************************************** Navbar ends ***************************************************************/
+
+/*********************************************** Banner starts ***************************************************************/
+    .apps-text {
+        Width: auto;
+        margin-left: 20%;
+    }
+
+    .apps-text h1 {
+        padding-top: 20%;
+        font-size: 35px;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .apps-text p {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 36px;
+        text-align: left;
+        padding: 5% 0 45px;
+    }
+
+    .apps {
+        margin-top: 150px;
+        color: #fff;
+        text-align: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+/*********************************************** Banner ends ***************************************************************/
+
+/*********************************************** What we do starts ***************************************************************/
+
+    .container {
+        padding-top: 15px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 0px;
+        display: inline-block;
+    }
+
+    .what-we-do {
+        background-color: #5a5d9d;
+        border-radius: 0px 100px 100px 0px;
+        padding: 40px;
+        max-width: 900px;
+        margin-left: -118px;
+        margin-top: 10px;
+        color: white;
+        padding-left: 140px;
+    }
+
+    .what-we-do h1 {
+        font-size: 30px;
+    }
+
+    .what-we-do p {
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .what-we-do h2 {
+        font-size: 26px;
+        color: black;
+    }
+
+    .what-we-do h3 {
+        font-size: 22px;
+        color: rgba(0, 0, 0, 0.577);
+    }
+
+
+    .image-container img {
+        width: 40%;
+    }
+
+    .image-container1 img {
+        width: 33%;
+        padding-top: 12px;
+        margin-left: 221px;
+    }
+
+/*********************************************** What we do ends ***************************************************************/
+
+/*********************************************** Tackling starts ***************************************************************/
+
+    .tackling h1 {
+        padding-top: 40px;
+        font-size: 35px;
+        padding-left: 30px;
+    }
+
+    .challenge {
+        color: white;
+        flex: 1 1 300px;
+        padding: 40px;
+        line-height: 30px;
+    }
+
+    .toughest {
+        margin-top: 3%;
+        margin-left: 20px;
+        background-color: #5a5d9d;
+        border-radius: 50px;
+        width: 95%;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .toughest-image {
+        width: 45%;
+    }
+
+    .challenge h2 {
+        font-size: 26px;
+        color: black;
+    }
+
+    .challenge p {
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+/*********************************************** Tackling ends ***************************************************************/
+
+/*********************************************** Proven starts ***************************************************************/
+
+    .proven {
+        padding-top: 25px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+
+    .expertise,
+    .innovation {
+        color: white;
+        border-radius: 50px;
+        margin: 10px;
+        max-width: 350px;
+        text-align: center;
+    }
+
+    .expertise h2 {
+        padding: 20px;
+        text-align: left;
+        color: black;
+        font-size: 26px;
+        margin-top: 10px;
+    }
+
+    .proven p {
+        line-height: 30px;
+        padding-top: 30px;
+        padding: 20px;
+        padding-bottom: 35px;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .expertise img,
+    .innovation-img img {
+        margin-top: 20px;
+        max-width: 100%;
+        height: 38vh;
+    }
+
+    .innovation-img img {
+        padding-left: 65px;
+    }
+
+/*********************************************** Proven ends ***************************************************************/
+
+/*********************************************** Embedded starts ***************************************************************/
+
+    .embedded h2 {
+        padding-bottom: 25px;
+        font-size: 26px;
+        color: black;
+    }
+
+    .embedded p {
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .embedded {
+        padding: 40px
+    }
+
+/*********************************************** Embedded ends ***************************************************************/
+
+/*********************************************** Container starts ***************************************************************/
+    
+    .container-one {
+        margin: 0 auto;
+        margin-top: 0px;
+        display: inline-block;
+    }
+
+    .addressing h2 {
+        font-size: 26px;
+        color: black;
+    }
+
+    .addressing h3 {
+        font-size: 22px;
+        color: rgba(0, 0, 0, 0.577);
+    }
+
+    .addressing p {
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .addressing {
+        background-color: #5a5d9d;
+        border-radius: 100px 0px 0px 100px;
+        padding: 40px;
+        max-width: 900px;
+        margin-left: -100px;
+        margin-top: 10px;
+        color: white;
+        padding-left: 140px;
+    }
+
+/*********************************************** Container ends ***************************************************************/
+
+/*********************************************** Trending starts ***************************************************************/
+    .trending h1 {
+        font-size: 30px;
+        color: black;
+    }
+
+    .trend h2 {
+        color: black;
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .trend p {
+        line-height: 30px;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+
+    .grid-item {
+        background-color: #5a5d9d;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-text h2 {
+        font-size: 20px;
+    }
+
+    .grid-text p {
+
+        font-size: 16px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: 45vh;
+    }
+
+/*********************************************** Trending ends ***************************************************************/
+
+}
+
+
+
+@media (min-width: 426px) and (max-width: 770px) {
+    .search-icon img {
+        display: block;
+    }
+
+    .header-content .logo h1 {
+        display: block;
+    }
+
+    .popup-container.left-popup {
+        top: 172px;
+        margin-left: auto;
+    }
+
+    .header-content {
+        align-items: center;
+        padding: 10px;
+    }
+
+    .menu-icon i {
+        display: block;
+        font-size: 25px;
+        margin-right: 15px;
+
+    }
+
+    .menu-head i {
+        display: none;
+        font-size: 25px;
+
+    }
+
+    .header-content .logo h1 {
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+
+    .header-form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1024px) {
+
+
+    .header-content .logo h1 {
+        display: block;
+    }
+
+    .search-icon img {
+        display: none;
+    }
+
+    .navbar-logo img {
+        width: 100px;
+        /* Adjust logo size for tablet */
+    }
+
+    .cubeaisolutions {
+        font-size: x-large;
+        /* Adjust font size for tablet */
+    }
+
+    .header-content .menu-icon {
+        display: none;
+    }
+
+    .popup-container {
+        width: 250px;
+        /* Set popup width for tablet */
+        height: auto;
+    }
+
+    .popup-content {
+        font-size: 20px;
+        /* Adjust font size for tablet */
+    }
+
+    .popup-links-content1 {
+        display: none;
+    }
+
+    .popup-close {
+        top: 30px;
+        /* Adjust close button position */
+        right: 30px;
+        /* Adjust close button position */
+    }
+
+
+    .popup-container {
+
+        height: auto;
+
+    }
+
+
+    .container {
+        margin: 0 auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .what-we-do {
+        background-color: #5a5d9d;
+        border-radius: 0px 100px 100px 0px;
+        padding: 40px;
+        max-width: 700px;
+        margin-top: 10px;
+        color: white;
+        padding-left: 85px;
+    }
+
+    .image-container {
+        flex: 1 1 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+    .image-container1 img {
+        width: 70%;
+        margin-left: 0px;
+    }
+
+    .challenge {
+        color: white;
+        flex: 1 1 300px;
+        padding: 72px;
+        line-height: 30px;
+    }
+
+    .toughest-image {
+        width: 47%;
+    }
+
+    .container-one {
+        margin: 0 auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .addressing {
+        background-color: #5a5d9d;
+        border-radius: 100px 0px 0px 100px;
+        padding: 40px;
+        max-width: 700px;
+        margin-top: 10px;
+        color: white;
+        padding-left: 70px;
+    }
+
+    .enquiry-title h2 {
+        font-size: 24px;
+        margin-left: 125px;
+    }
+
+
+}
+
+@media (min-width: 1025px) {
+    .navbar-logo img {
+        width: 120px;
+        /* Adjust logo size for Laptop L and above */
+    }
+
+    .cubeaisolutions {
+        font-size: xx-large;
+        /* Adjust font size for Laptop L and above */
+    }
+
+    .nav-links {
+        display: flex;
+        /* Show nav links */
+    }
+
+    .search-icon img {
+        width: 25px;
+        /* Adjust search icon size for Laptop L and above */
+    }
+
+    .header-content .menu-icon {
+        display: none;
+        /* Hide menu icon */
+    }
+
+    .popup-container {
+        width: 200px;
+        /* Set popup width for Laptop L and above */
+        height: auto;
+        /* Set popup height for Laptop L and above */
+    }
+
+    .popup-content {
+        font-size: 22px;
+        /* Adjust font size for Laptop L and above */
+    }
+
+    .popup-close {
+        top: 10px;
+        /* Adjust close button position */
+        right: 10px;
+        /* Adjust close button position */
+    }
+
+    .popup-links-content1 {
+        display: none;
+    }
+
+    .popup-container {
+        display: none;
+        height: auto;
+    }
+
+    .enquiry-title h2 {
+        font-size: 24px;
+        margin-left: 300px;
+    }
+
+    .company-logo img {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .company-info h1 {
+        font-size: 30px;
+    }
+
+    .enquiry-title h2 {
+        font-size: 26px;
+        margin-left: 200px;
+    }
+}
+
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.form {
+    width: 80%;
+    margin: 0px 10%;
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+}
+
+.form-control-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+.position-relative {
+    position: relative;
+}
+
+label {
+    font-size: 20px;
+}
+
+
+.form-heading {
+    font-size: 29px;
+    font-weight: bold;
+    position: absolute;
+    left: 58%;
+    transform: translateX(-50%);
+}
+
+.textarea-container {
+    position: relative;
+}
+
+.textarea-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #ccc;
+}
+
+textarea {
+    padding-right: 30px;
+}
+
+input.form-control,
+textarea.form-control {
+    background-color: rgba(242, 242, 242, 1);
+    color: #333;
+    padding-right: 40px;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    background-color: rgba(242, 242, 242, 1);
+    box-shadow: none;
+}
+
+button.btn-primary {
+    max-width: 50%;
+    width: 100px;
+    background-color: #5a5d9d;
+    border: none;
+}
+
+.btn-container {
+    text-align: center;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .form-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-heading {
+        position: relative;
+        left: auto;
+        transform: none;
+        margin-top: 10px;
+        font-size: 19px;
+    }
+
+    .company-name {
+        font-size: 21px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width:375px) {
+    label{
+        font-size: 16px;
+    }
+}
+@media (max-width: 375px) {
+    label {
+        font-size: 16px;
+    }
+    .form-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-heading {
+        position: relative;
+        left: auto;
+        transform: none;
+        margin-top: 10px;
+        font-size: 17px;
+    }
+
+    .company-name {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width:1366px) {
+    label {
+        font-size: 20px;
+    }
+
+    .form-heading {
+        left: 50%;
+    }
+}
